@@ -1,0 +1,18 @@
+{% capture __minify %}
+
+{% comment %}
+<!--
+	Parameters:
+		_desc: the nav-item descriptor
+-->
+{% endcomment %}
+
+{% if _desc.predefined %}
+	{% assign _actual = site.nav-items-predefined[_desc.predefined] %}
+{% else %}
+	{% assign _actual = _desc %}
+{% endif %}
+
+<li><a class="nav-item{% if _actual.class %} {{ _actual.class }}{% endif %}" title="{{ _actual.title }}" href="{{ _actual.url }}">{% if _actual.icon %}<img class="nav-item-icon{% if _actual.icon-class %} {{ _actual.icon-class }}{% endif %}" src="/images/icons/{{ _actual.icon }}" alt="{{ _actual.title }}"/>{% endif %}{% if _actual.text %}{{ _actual.text }}{% endif %}</a></li>
+{% assign _desc_actual = null %}{% assign _desc = null %}
+{% endcapture %}{% include common/minify_reprint %}

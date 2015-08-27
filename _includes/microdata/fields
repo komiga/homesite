@@ -1,0 +1,12 @@
+{% unless page.md-disabled or page.md-metadata-disabled %}
+
+	<meta itemprop="name" content="{% include fetch/page/window_title %}" />
+	<link itemprop="url" href="{% include common/canonical_url %}" />
+	<link itemprop="image" href="{% if page.image %}{{ page.image }}{% else %}{{ site.meta.image }}{% endif %}" />
+{% if page.description %}
+	<meta itemprop="description" content="{{ page.description }}" />
+{% endif %}
+
+	<meta itemprop="headline" content="{% include fetch/page/title_fallback %}" />
+
+{% endunless %}
