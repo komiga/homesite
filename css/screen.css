@@ -139,28 +139,31 @@ h6:hover>a.para-ref
 	background-color: #000000;
 }
 
-.navbar>nav>ul>li:hover {
-	background-color: #ffffff;
-}
-
-a.nav-item {
+.nav-item {
 	display: block;
-	min-width: 32px;
+	min-width: 16px;
 	height: 48px;
 	line-height: 48px;
 	padding: 0px 8px 0px 8px;
 	text-decoration: none;
 	text-align: center;
 	color: #ffffff;
+	background-color: #000000;
+}
+
+.nav-item.link {
+	min-width: 32px;
+}
+
+.nav-item.bold {
+	font-weight: bold;
+	font-size: 110%;
 }
 
 a:hover.nav-item {
+	text-decoration: none;
 	color: #000000;
-}
-
-.nav-item.text-icon {
-	font-weight: bold;
-	font-size: 110%;
+	background-color: #ffffff;
 }
 
 .nav-item-icon {

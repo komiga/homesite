@@ -13,6 +13,14 @@
 	{% assign _actual = _desc %}
 {% endif %}
 
-<li><a class="nav-item{% if _actual.class %} {{ _actual.class }}{% endif %}" title="{{ _actual.title }}" href="{{ _actual.url }}">{% if _actual.icon %}<img class="nav-item-icon{% if _actual.icon-class %} {{ _actual.icon-class }}{% endif %}" src="/images/icons/{{ _actual.icon }}" alt="{{ _actual.title }}"/>{% endif %}{% if _actual.text %}{{ _actual.text }}{% endif %}</a></li>
-{% assign _desc_actual = null %}{% assign _desc = null %}
+{% if _actual.url == null %}
+<li><span class="nav-item bold{% if _actual.class %} {{ _actual.class }}{% endif %}">{% if _actual.text %}{{ _actual.text }}{% else %}:{% endif %}</span></li>
+{% else %}
+{% comment %} Liquid and/or Jekyll borked up the slice filter {% endcomment %}
+{% capture _url_prefix %}{{ _actual.url | split: '' | first }}{% endcapture %}
+<!-- {{ _url_prefix }} -->
+<li><a class="nav-item link{% if _url_prefix != '#' %} bold{% endif %}{% if _actual.class %} {{ _actual.class }}{% endif %}" title="{{ _actual.title }}" href="{{ _actual.url }}">{% if _actual.icon %}<img class="nav-item-icon{% if _actual.icon-class %} {{ _actual.icon-class }}{% endif %}" src="/images/icons/{{ _actual.icon }}" alt="{{ _actual.title }}"/>{% endif %}{% if _actual.text %}{{ _actual.text }}{% endif %}</a></li>
+{% endif %}
+
+{% assign _url_prefix = null %}{% assign _actual = null %}{% assign _desc = null %}
 {% endcapture %}{% include common/minify_reprint %}
