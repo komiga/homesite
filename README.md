@@ -11,5 +11,4 @@ _config.yml
 sitemap.txt
 ```
 
-**Actual page content is © 2012 [komiga](http://komiga.com).**
-
+**Actual page content is © [komiga](http://komiga.com).**
