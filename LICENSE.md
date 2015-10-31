@@ -3,7 +3,7 @@
 The MIT license. **This only applies to jekyll stuff/styling/etc. (as layed out in [`README.md`](/komiga/komiga.github.com/blob/master/README.md))**.
 
 ```
-Copyright (c) 2012-2015 plash <plash@komiga.com>
+Copyright (c) 2012-2015 Coranna Howard <me@komiga.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
