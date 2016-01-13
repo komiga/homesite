@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 
 	<title>{{ page_title(C.title) }}</title>
-	<link rel="canonical" href="{{ canonical_url(C.url) }}" />
+	<link rel="canonical" href="{! canonical_url(C.url) !}" />
 
 	<link rel="icon" type="image/png" href="/images/icons/favicon-32.png" />
 	<link rel="shortcut icon" href="/favicon.ico" />
@@ -42,7 +42,7 @@
 
 {@ "core/bits/microdata/fields" @}
 
-{! content !}
+{! C.content !}
 
 </article>
 
