@@ -8,7 +8,7 @@ local Page = require "core/Page"
 local NavItem = require "core/NavItem"
 
 P.configure{
-	build_path = "public/",
+	build_path = "build/",
 }
 
 Core.setup_site{
