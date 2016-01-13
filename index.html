@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+	<meta charset="utf-8" />
+
+	<title>komiga</title>
+	<link rel="canonical" href="http://komiga.com/" />
+
+	<link rel="icon" type="image/png" href="/images/icons/favicon-32.png" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" href="/css/reset.css" type="text/css" />
+	<link rel="stylesheet" href="/css/screen.css" type="text/css" />
+
+	<script type="text/javascript">
+	var _gaq=_gaq || [];
+	_gaq.push(["_setAccount", "UA-6565507-1"]);
+		_gaq.push(["_trackPageview"]);
+
+	(function() 
+		var ga=document.createElement("script"); ga.type="text/javascript"; ga.async=true;
+		ga.src=("https:"==document.location.protocol ? "https://ssl" : "http://www")+".google-analytics.com/ga.js";
+		var s=document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+</head>
+<body>
+
+<div class="navbar">
+	<nav>
+		<ul>
+				<li><a class="nav-item link" title="top" href="#"><img class="nav-item-icon home" src="/images/icons/komiga.svg" alt="top"/></a></li>
+
+		
+				<li><a class="nav-item link bold" title="email" href="mailto:me@komiga.com">@</a></li>
+
+				<li><a class="nav-item link bold" title="GitHub" href="https://github.com/komiga"><img class="nav-item-icon" src="/images/icons/github.svg" alt="GitHub"/></a></li>
+
+				<li><a class="nav-item link bold" title="Twitter" href="https://twitter.com/komiga"><img class="nav-item-icon" src="/images/icons/twitter.svg" alt="Twitter"/></a></li>
+
+				<li><a class="nav-item link bold" href="/resume">/resumé</a></li>
+
+				<li><span class="nav-item bold">:</span></li>
+
+				<li><a class="nav-item link" href="#about">§ about</a></li>
+
+				<li><a class="nav-item link" href="#code">§ code</a></li>
+
+				<li><a class="nav-item link" href="#games">§ games</a></li>
+
+				<li><a class="nav-item link" href="#misc">§ misc</a></li>
+
+				</ul>
+	</nav>
+</div>
+
+<div class="container">
+<div class="main_column">
+
+<article class="article">
+
+	<meta itemprop="name" content="komiga" />
+	<link itemprop="url" href="http://komiga.com/" />
+	<link itemprop="image" href="http://lh4.googleusercontent.com/-fek5nINIJug/UMVJdFtlHVI/AAAAAAAAAHw/sb0KGgMaPPU/k-nrm-256.png" />
+
+	<meta itemprop="headline" content="komiga" />
+
+
+<div class="article_content" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement">
+
+
+<h1>§ about<a class="para-ref" id="about" href="#about"></a></h1>
+
+<p>I am Coranna. I observe. I break. I make. I confound.</p>
+
+<p>I write at <a target="_blank" href="http://allopoeia.komiga.com">Allopoeia</a>. Sometimes I make <a target="_blank" href="https://soundcloud.com/komiga/sets/random-va">voices</a> (and imitations of non-voices), <a target="_blank" href="https://soundcloud.com/komiga/sets/things-that-resemble-music">music</a> (maybe), and <a target="_blank" href="https://soundcloud.com/komiga/sets/things-that-resemble-sound">sounds</a>.</p>
+
+<p>Talk to me if you must know more.</p>
+
+
+<h1>§ code<a class="para-ref" id="code" href="#code"></a></h1>
+
+<h4><a target="_blank" href="https://github.com/komiga/am">All the Maths‽</a><a class="para-ref" id="am" href="#am"></a></h4>
+
+<p>A mathematics library for C++. It currently does linear algebra (in the dialect of OpenGL) and string hashing (Fowler-Noll-Vo and Murmur).</p>
+
+
+<h4><a target="_blank" href="https://github.com/komiga/Beard">Beard</a><a class="para-ref" id="beard" href="#beard"></a></h4>
+
+<p>A terminal UI for C++. Because ncurses is an abomination. In the interest of fairness, Beard also happens to be an abomination. Must be the TTY sickness.</p>
+
+
+<h4><a target="_blank" href="https://github.com/komiga/Cacophony">Cacophony</a><a class="para-ref" id="cacophony" href="#cacophony"></a></h4>
+
+<p>A serialization library for C++. It is similar to <a target="_blank" href="http://uscilab.github.io/cereal">cereal</a>, but doesn't dabble in polymorphism, type registration, or RTTI, instead requiring explicit hierarchic serialization.</p>
+
+
+<h4>duct<a class="para-ref" id="duct" href="#duct"></a></h4>
+
+<p>A general-purpose library for multiple languages. It began in <a target="_blank" href="https://github.com/komiga/duct-max">BlitzMax</a>, but was eventually ported to <a target="_blank" href="https://github.com/komiga/duct-cpp">C++</a> and partially to <a target="_blank" href="https://github.com/komiga/duct-sharp">C♯</a>.</p>
+
+<p><a target="_blank" href="https://github.com/komiga/duct-cpp">duct++</a> was given the most care, but it is being neglected in favor of <a href="#togo">togo</a>. It carries its own weight (with zero dependencies) and features the following:</p>
+
+<ul>
+	<li>Compiler and platform detection macros.</li>
+	<li>Debug message and assertion macros.</li>
+	<li>Endian byte-swapping.</li>
+	<li>Unicode encoding and string conversion helpers.</li>
+	<li>iostream helpers for binary and textual data (integrates with the C++ Standard Library).</li>
+	<li>Dynamic-memory and multi-cast stream classes.</li>
+	<li>Generic token parsing and argument parsing.</li>
+	<li>A general-purpose markup language with pattern-matching.</li>
+	<li>Set of macros for scoped error reporting and messaging.</li>
+	<li>Miscellaneous utilities and common classes.</li>
+</ul>
+
+
+<h4><a target="_blank" href="https://github.com/komiga/precore">precore</a><a class="para-ref" id="precore" href="#precore"></a></h4>
+
+<p>An extension of <a target="_blank" href="http://industriousone.com/what-premake">Premake</a>. It facilitates build setup reuse, making the already pleasant Premake even more pleasant.</p>
+
+
+<h4><a target="_blank" href="https://github.com/komiga/togo">togo</a><a class="para-ref" id="togo" href="#togo"></a></h4>
+
+<p>A C++ data-oriented super-library. It began as a game engine, but I found its design too appealing to leave it all bound up in a high-dependency library. As a result, togo is now composed of multiple components (libraries and tools). I am using it for all of my new projects, largely eschewing the C++ stdlib.</p>
+
+<p>It seems likely that many of the projects I created under different design principles will eventually be recrafted within togo.</p>
+
+
+<h4>Short list<a class="para-ref" id="short-list" href="#short-list"></a></h4>
+
+<ul>
+	<li><a target="_blank" href="https://github.com/komiga/include_sort">include_sort</a>: order-explicit inclusion sorter for C and C++ (supremely silly).</li>
+
+	<li><a target="_blank" href="https://github.com/komiga/igen">igen</a>: libclang-based interface generator for C++ (abominable).</li>
+
+	<li><a target="_blank" href="https://github.com/komiga/brinktools">brinktools</a>: some shabby code for reading BRINK's SDMD2 and SDPK2 formats (including documentation; warning: code uses legacy duct++ API).</li>
+
+	<li><a target="_blank" href="https://github.com/komiga/trait_wrangler">Trait Wrangler</a>: a small C++ library for trait testing &amp; common trait compounds.</li>
+</ul>
+
+
+<h1>§ games<a class="para-ref" id="games" href="#games"></a></h1>
+
+<h4><a href="http://www.ludumdare.com/compo/ludum-dare-30/?action=preview&amp;uid=14542">Onomo</a><a class="para-ref" id="onomo" href="#onomo"></a></h4>
+
+<p>A dark, moody platformer concept created over a 48-hour period for Ludum Dare 30. I neglected mechanics and made <em>something</em> that is only compelling in aesthetic. The code is <a href="https://github.com/komiga/ld30-onomo">available</a> under the <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">CC BY-NC-ND 3.0</a> license.</p>
+
+<h4><a href="http://www.ludumdare.com/compo/ludum-dare-26/?action=preview&amp;uid=14542">Prisma</a><a class="para-ref" id="prisma" href="#prisma"></a></h4>
+
+<p>A minimalistic color-based quasi-puzzle game created over a 72-hour period for Ludum Dare 26. The levels are poor, the audio is terrible, and the “puzzles” are mostly based on player speed. The code is <a href="https://github.com/komiga/ld26-prisma">available</a> under the <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">CC BY-NC-ND 3.0</a> license.</p>
+
+
+<h1>§ misc<a class="para-ref" id="misc" href="#misc"></a></h1>
+
+<ul>
+	<li><a target="_blank" href="https://github.com/komiga/elian-fonts">Elian fonts</a>: variant-width and monospace fonts for the <a target="_blank" href="http://ccelian.com/concepca.html">Elian script</a> (including FontForge source files).</li>
+</ul>
+
+
+</div>
+
+
+</article>
+
+<footer class="footer">
+	<span>&copy; 2012–2016 komiga</span>
+</footer>
+
+</div>
+</div>
+
+</body>
+</html>
