@@ -1,0 +1,11 @@
+sitemap = false
+---content---
+{%
+for _, page in pairs(Site.pages) do
+	if page.sitemap then
+%}
+{{ canonical_url(page) }}
+{%
+	end
+end %}
+{{ canonical_url("googlec5480ae88f6c1782.html") }}

@@ -1,22 +1,21 @@
----
-layout: generic
-nav-items: [
-	{text: "@", title: "email", url: "mailto:me@komiga.com"},
-	{predefined: "github"},
-	{},
-	{text: "&sect; cover", url: "#cover"},
-	{text: "&sect; work experience", url: "#work-experience"},
-	{text: "&sect; open source", url: "#open-source"},
-	{text: "&sect; volunteer work", url: "#volunteer-work"},
-	{text: "&sect; games", url: "#games"},
-	{text: "&sect; education", url: "#education"},
-	{text: "&sect; skills", url: "#skills"}
-]
+layout = "generic"
+nav = {
+	Site.nav.email,
+	Site.nav.github,
+	NavItem(),
+	NavItem("§ cover", nil, "#cover"),
+	NavItem("§ work experience", nil, "#work-experience"),
+	NavItem("§ open source", nil, "#open-source"),
+	NavItem("§ volunteer work", nil, "#volunteer-work"),
+	NavItem("§ games", nil, "#games"),
+	NavItem("§ education", nil, "#education"),
+	NavItem("§ skills", nil, "#skills"),
+}
 
-title: resumé
----
+title = "resumé"
+---content---
 
-<h1>&sect; cover<a class="para-ref" id="cover" href="#cover"></a></h1>
+<h1>§ cover<a class="para-ref" id="cover" href="#cover"></a></h1>
 
 <p>I am a self-taught programmer and game maker with keen interest in system design, data, games, and narrative. I started programming at the age of 13 and have been primarily using Linux &amp; C++ since 2009 &amp; 2010, respectively.</p>
 
@@ -25,7 +24,7 @@ title: resumé
 <p>My adventures are diverse, with personal software projects involved in reverse-engineering, data collection &amp; analysis, game systems, game emulation, graphics, mathematics, and networking. My professional experience includes software development, software repackaging &amp; deployment, hardware configuration &amp; deployment, and teaching.</p>
 
 
-<h1>&sect; work experience<a class="para-ref" id="work-experience" href="#work-experience"></a></h1>
+<h1>§ work experience<a class="para-ref" id="work-experience" href="#work-experience"></a></h1>
 
 <h4>&lowast; Austin Powder Company &mdash; contract <small><em>(2011 Jan &mdash; 2014 May)</em></small></h4>
 
@@ -44,7 +43,7 @@ title: resumé
 <p><strong>Hardware deployment.</strong> Configured and deployed 65 replacement computers with Windows XP. Prior to deployment, I built cross-platform software to track assignment &amp; completion of each device and to allow the project manager to securely share user information with the technician.</p>
 
 
-<h1>&sect; open source<a class="para-ref" id="open-source" href="#open-source"></a></h1>
+<h1>§ open source<a class="para-ref" id="open-source" href="#open-source"></a></h1>
 
 <p>Personal projects:</p>
 
@@ -95,7 +94,7 @@ title: resumé
 </ul>
 
 
-<h1>&sect; volunteer work<a class="para-ref" id="volunteer-work" href="#volunteer-work"></a></h1>
+<h1>§ volunteer work<a class="para-ref" id="volunteer-work" href="#volunteer-work"></a></h1>
 
 <h4>&lowast; Linux video game quality assurance</h4>
 
@@ -108,7 +107,7 @@ title: resumé
 </ul>
 
 
-<h1>&sect; games<a class="para-ref" id="games" href="#games"></a></h1>
+<h1>§ games<a class="para-ref" id="games" href="#games"></a></h1>
 
 <ul>
 	<li><a target="_blank" href="http://www.ludumdare.com/compo/ludum-dare-26/?action=preview&amp;uid=14542">Prisma</a> &mdash; a color-based "puzzler" full of secrets (Lua, 35.1h during Ludum Dare 26)</li>
@@ -117,7 +116,7 @@ title: resumé
 </ul>
 
 
-<h1>&sect; education<a class="para-ref" id="education" href="#education"></a></h1>
+<h1>§ education<a class="para-ref" id="education" href="#education"></a></h1>
 
 <p>Primary: home-schooled; self-taught in final years. Autodidact computer programmer (primarily by use and experimentation) and curious craftsperson (book binding, wood working, and tool making, among many others).</p>
 
@@ -132,7 +131,7 @@ title: resumé
 </ul>
 
 
-<h1>&sect; skills<a class="para-ref" id="skills" href="#skills"></a></h1>
+<h1>§ skills<a class="para-ref" id="skills" href="#skills"></a></h1>
 
 <ul class="float-list" style="width: 10%;">
 	<li>C++</li>
