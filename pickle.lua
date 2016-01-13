@@ -3,7 +3,6 @@ local P = require "Pickle"
 local F = require "Pickle.Filter"
 local Core = require "core/Core"
 local Layout = require "core/Layout"
-local Microdata = require "core/Layout"
 local Page = require "core/Page"
 local NavItem = require "core/NavItem"
 
