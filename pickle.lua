@@ -5,6 +5,7 @@ local Core = require "core/Core"
 local Layout = require "core/Layout"
 local Page = require "core/Page"
 local NavItem = require "core/NavItem"
+local Section = require "src/Section"
 
 P.configure{
 	build_path = "build/",

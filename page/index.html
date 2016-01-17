@@ -5,14 +5,10 @@ nav = {
 	Site.nav.twitter,
 	NavItem("/resumé", nil, "/resume"),
 	NavItem(),
-	NavItem("§ about", nil, "#about"),
-	NavItem("§ code", nil, "#code"),
-	NavItem("§ games", nil, "#games"),
-	NavItem("§ misc", nil, "#misc"),
 }
 ---content---
 
-<h1>§ about<a class="para-ref" id="about" href="#about"></a></h1>
+{! Section.nav(C, "about") !}
 
 <p>I am Coranna. I observe. I break. I make. I confound.</p>
 
@@ -21,24 +17,24 @@ nav = {
 <p>Talk to me if you must know more.</p>
 
 
-<h1>§ code<a class="para-ref" id="code" href="#code"></a></h1>
+{! Section.nav(C, "code") !}
 
-<h4><a target="_blank" href="https://github.com/komiga/am">All the Maths‽</a><a class="para-ref" id="am" href="#am"></a></h4>
+{! Section.item(C, "All the Maths‽", "https://github.com/komiga/am", "am") !}
 
 <p>A mathematics library for C++. It currently does linear algebra (in the dialect of OpenGL) and string hashing (Fowler-Noll-Vo and Murmur).</p>
 
 
-<h4><a target="_blank" href="https://github.com/komiga/Beard">Beard</a><a class="para-ref" id="beard" href="#beard"></a></h4>
+{! Section.item(C, "Beard", "https://github.com/komiga/Beard") !}
 
 <p>A terminal UI for C++. Because ncurses is an abomination. In the interest of fairness, Beard also happens to be an abomination. Must be the TTY sickness.</p>
 
 
-<h4><a target="_blank" href="https://github.com/komiga/Cacophony">Cacophony</a><a class="para-ref" id="cacophony" href="#cacophony"></a></h4>
+{! Section.item(C, "Cacophony", "https://github.com/komiga/Cacophony") !}
 
 <p>A serialization library for C++. It is similar to <a target="_blank" href="http://uscilab.github.io/cereal">cereal</a>, but doesn't dabble in polymorphism, type registration, or RTTI, instead requiring explicit hierarchic serialization.</p>
 
 
-<h4>duct<a class="para-ref" id="duct" href="#duct"></a></h4>
+{! Section.item(C, "duct") !}
 
 <p>A general-purpose library for multiple languages. It began in <a target="_blank" href="https://github.com/komiga/duct-max">BlitzMax</a>, but was eventually ported to <a target="_blank" href="https://github.com/komiga/duct-cpp">C++</a> and partially to <a target="_blank" href="https://github.com/komiga/duct-sharp">C♯</a>.</p>
 
@@ -58,19 +54,19 @@ nav = {
 </ul>
 
 
-<h4><a target="_blank" href="https://github.com/komiga/precore">precore</a><a class="para-ref" id="precore" href="#precore"></a></h4>
+{! Section.item(C, "precore", "https://github.com/komiga/precore") !}
 
 <p>An extension of <a target="_blank" href="http://industriousone.com/what-premake">Premake</a>. It facilitates build setup reuse, making the already pleasant Premake even more pleasant.</p>
 
 
-<h4><a target="_blank" href="https://github.com/komiga/togo">togo</a><a class="para-ref" id="togo" href="#togo"></a></h4>
+{! Section.item(C, "togo", "https://github.com/komiga/togo") !}
 
 <p>A C++ data-oriented super-library. It began as a game engine, but I found its design too appealing to leave it all bound up in a high-dependency library. As a result, togo is now composed of multiple components (libraries and tools). I am using it for all of my new projects, largely eschewing the C++ stdlib.</p>
 
 <p>It seems likely that many of the projects I created under different design principles will eventually be recrafted within togo.</p>
 
 
-<h4>Short list<a class="para-ref" id="short-list" href="#short-list"></a></h4>
+{! Section.item(C, "Short list") !}
 
 <ul>
 	<li><a target="_blank" href="https://github.com/komiga/include_sort">include_sort</a>: order-explicit inclusion sorter for C and C++ (supremely silly).</li>
@@ -83,18 +79,18 @@ nav = {
 </ul>
 
 
-<h1>§ games<a class="para-ref" id="games" href="#games"></a></h1>
+{! Section.nav(C, "games") !}
 
-<h4><a href="http://www.ludumdare.com/compo/ludum-dare-30/?action=preview&amp;uid=14542">Onomo</a><a class="para-ref" id="onomo" href="#onomo"></a></h4>
+{! Section.item(C, "Onomo", "http://www.ludumdare.com/compo/ludum-dare-30/?action=preview&amp;uid=14542") !}
 
 <p>A dark, moody platformer concept created over a 48-hour period for Ludum Dare 30. I neglected mechanics and made <em>something</em> that is only compelling in aesthetic. The code is <a href="https://github.com/komiga/ld30-onomo">available</a> under the <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">CC BY-NC-ND 3.0</a> license.</p>
 
-<h4><a href="http://www.ludumdare.com/compo/ludum-dare-26/?action=preview&amp;uid=14542">Prisma</a><a class="para-ref" id="prisma" href="#prisma"></a></h4>
+{! Section.item(C, "Prisma", "http://www.ludumdare.com/compo/ludum-dare-26/?action=preview&amp;uid=14542") !}
 
 <p>A minimalistic color-based quasi-puzzle game created over a 72-hour period for Ludum Dare 26. The levels are poor, the audio is terrible, and the “puzzles” are mostly based on player speed. The code is <a href="https://github.com/komiga/ld26-prisma">available</a> under the <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">CC BY-NC-ND 3.0</a> license.</p>
 
 
-<h1>§ misc<a class="para-ref" id="misc" href="#misc"></a></h1>
+{! Section.nav(C, "misc") !}
 
 <ul>
 	<li><a target="_blank" href="https://github.com/komiga/elian-fonts">Elian fonts</a>: variant-width and monospace fonts for the <a target="_blank" href="http://ccelian.com/concepca.html">Elian script</a> (including FontForge source files).</li>
