@@ -5,8 +5,9 @@ The following files/directories (basically, the site's source) are licensed unde
 ```
 static/css/
 layout/
-pickle.lua
 page/sitemap.txt
+src/
+pickle.lua
 ```
 
 **Actual page content is © komiga.**
