@@ -1,9 +1,18 @@
 # License
 
-The MIT license. **This only applies to jekyll stuff/styling/etc. (as layed out in [`README.md`](/komiga/komiga.github.com/blob/master/README.md))**.
+The following files/directories (basically, the site's source) are licensed under MIT (see legalese below):
 
 ```
-Copyright (c) 2012-2015 Coranna Howard <me@komiga.com>
+static/css/
+layout/
+pickle.lua
+page/sitemap.txt
+```
+
+**Actual page content is © komiga.**
+
+```
+Copyright (c) 2012-2016 Coranna Howard <me@komiga.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
