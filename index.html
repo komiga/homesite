@@ -83,39 +83,9 @@
 
 <h1>§ code<a class="para-ref" id="code" href="#code"></a></h1>
 
-<h4><a target="_blank" href="https://github.com/komiga/am">All the Maths‽</a><a class="para-ref" id="am" href="#am"></a></h4>
+<h4><a target="_blank" href="https://github.com/komiga/pickle">Pickle</a><a class="para-ref" id="pickle" href="#pickle"></a></h4>
 
-<p>A mathematics library for C++. It currently does linear algebra (in the dialect of OpenGL) and string hashing (Fowler-Noll-Vo and Murmur).</p>
-
-
-<h4><a target="_blank" href="https://github.com/komiga/Beard">Beard</a><a class="para-ref" id="beard" href="#beard"></a></h4>
-
-<p>A terminal UI for C++. Because ncurses is an abomination. In the interest of fairness, Beard also happens to be an abomination. Must be the TTY sickness.</p>
-
-
-<h4><a target="_blank" href="https://github.com/komiga/Cacophony">Cacophony</a><a class="para-ref" id="cacophony" href="#cacophony"></a></h4>
-
-<p>A serialization library for C++. It is similar to <a target="_blank" href="http://uscilab.github.io/cereal">cereal</a>, but doesn't dabble in polymorphism, type registration, or RTTI, instead requiring explicit hierarchic serialization.</p>
-
-
-<h4>duct<a class="para-ref" id="duct" href="#duct"></a></h4>
-
-<p>A general-purpose library for multiple languages. It began in <a target="_blank" href="https://github.com/komiga/duct-max">BlitzMax</a>, but was eventually ported to <a target="_blank" href="https://github.com/komiga/duct-cpp">C++</a> and partially to <a target="_blank" href="https://github.com/komiga/duct-sharp">C♯</a>.</p>
-
-<p><a target="_blank" href="https://github.com/komiga/duct-cpp">duct++</a> was given the most care, but it is being neglected in favor of <a href="#togo">togo</a>. It carries its own weight (with zero dependencies) and features the following:</p>
-
-<ul>
-	<li>Compiler and platform detection macros.</li>
-	<li>Debug message and assertion macros.</li>
-	<li>Endian byte-swapping.</li>
-	<li>Unicode encoding and string conversion helpers.</li>
-	<li>iostream helpers for binary and textual data (integrates with the C++ Standard Library).</li>
-	<li>Dynamic-memory and multi-cast stream classes.</li>
-	<li>Generic token parsing and argument parsing.</li>
-	<li>A general-purpose markup language with pattern-matching.</li>
-	<li>Set of macros for scoped error reporting and messaging.</li>
-	<li>Miscellaneous utilities and common classes.</li>
-</ul>
+<p>A static site generator using Lua and togo. It's more versatile than, say, Jekyll or Hugo &ndash; in my opinion, of course &ndash; but it has a while to go before the kinks are hammered out. My websites use it.</p>
 
 
 <h4><a target="_blank" href="https://github.com/komiga/precore">precore</a><a class="para-ref" id="precore" href="#precore"></a></h4>
@@ -127,21 +97,40 @@
 
 <p>A C++ data-oriented super-library. It began as a game engine, but I found its design too appealing to leave it all bound up in a high-dependency library. As a result, togo is now composed of multiple components (libraries and tools). I am using it for all of my new projects, largely eschewing the C++ stdlib.</p>
 
-<p>It seems likely that many of the projects I created under different design principles will eventually be recrafted within togo.</p>
+<p>It is replacing many of the projects I started under earlier, poorer, design principles.</p>
 
 
-<h4>Short list<a class="para-ref" id="short-list" href="#short-list"></a></h4>
+<h4>∗ tools<a class="para-ref" id="tools" href="#tools"></a></h4>
 
 <ul>
-	<li><a target="_blank" href="https://github.com/komiga/include_sort">include_sort</a>: order-explicit inclusion sorter for C and C++ (supremely silly).</li>
+	<li><a target="_blank" href="https://github.com/komiga/include_sort">include_sort</a>: order-explicit inclusion sorter for C and C++.</li>
 
-	<li><a target="_blank" href="https://github.com/komiga/igen">igen</a>: libclang-based interface generator for C++ (abominable).</li>
-
-	<li><a target="_blank" href="https://github.com/komiga/brinktools">brinktools</a>: some shabby code for reading BRINK's SDMD2 and SDPK2 formats (including documentation; warning: code uses legacy duct++ API).</li>
-
-	<li><a target="_blank" href="https://github.com/komiga/trait_wrangler">Trait Wrangler</a>: a small C++ library for trait testing &amp; common trait compounds.</li>
+	<li><a target="_blank" href="https://github.com/komiga/igen">igen</a>: libclang-based interface generator for C++.</li>
 </ul>
 
+
+<h4>∗ reverse-engineering<a class="para-ref" id="reverse-engineering" href="#reverse-engineering"></a></h4>
+
+<ul>
+	<li><a target="_blank" href="https://github.com/komiga/brinktools">brinktools</a>: ancient code and docs for BRINK's SDMD2 and SDPK2 formats.</li>
+</ul>
+
+
+<h4>∗ graveyard<a class="para-ref" id="graveyard" href="#graveyard"></a></h4>
+
+<p>These are bad projects from my early days.</p>
+
+<ul>
+	<li><a target="_blank" href="https://github.com/komiga/am">All the Maths‽</a>: a mathematics library for C++.</li>
+
+	<li><a target="_blank" href="https://github.com/komiga/Beard">Beard</a>: a terminal UI for C++.</li>
+
+	<li><a target="_blank" href="https://github.com/komiga/Cacophony">Cacophony</a>: a serialization library for C++.</li>
+
+	<li><a target="_blank" href="https://github.com/komiga/duct-cpp">duct++</a>: a general-purpose library for C++.</li>
+
+	<li><a target="_blank" href="https://github.com/komiga/trait_wrangler">Trait Wrangler</a>: a small trait testing library for C++.</li>
+</ul>
 
 <h1>§ games<a class="para-ref" id="games" href="#games"></a></h1>
 
