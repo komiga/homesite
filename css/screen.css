@@ -64,23 +64,27 @@ sup {
 }
 
 .para-ref {
+	margin-top: -60px;
+	padding-top: 60px;
+}
+.para-ref>a {
 	display: inline;
 	visibility: hidden;
-	margin: -60px 5px auto 5px;
-	padding: 60px 5px 0px 5px;
-}
-.para-ref:before {content: "#";}
-
-h1:hover>a.para-ref,
-h2:hover>a.para-ref,
-h3:hover>a.para-ref,
-h4:hover>a.para-ref,
-h5:hover>a.para-ref,
-h6:hover>a.para-ref
-{
-	visibility: visible;
+	margin: auto 5px auto 5px;
+	padding: 0px 5px 0px 5px;
 	font-weight: normal;
 	text-decoration: none;
+}
+.para-ref>a:before {content: "#";}
+
+h1:hover>.para-ref>a,
+h2:hover>.para-ref>a,
+h3:hover>.para-ref>a,
+h4:hover>.para-ref>a,
+h5:hover>.para-ref>a,
+h6:hover>.para-ref>a
+{
+	visibility: visible;
 }
 
 /* Top-level */
@@ -158,6 +162,17 @@ h6:hover>a.para-ref
 .nav-item.bold {
 	font-weight: bold;
 	font-size: 110%;
+}
+
+.nav-item.single {
+	font-size: 140%;
+}
+
+/* It doesn't feel right with Bitstream Vera Sans!! */
+/* It's not aligned with the @ symbol on the index!!! */
+.nav-item.omega>span {
+	display: block;
+	padding-top: 2px;
 }
 
 a:hover.nav-item {
