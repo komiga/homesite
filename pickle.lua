@@ -24,9 +24,11 @@ Core.setup_site(function()
 	nav = {
 		home     = NavItem(nil, "top"      , "#", "komiga.svg", "home"),
 		backhome = NavItem(nil, "main page", "/", "komiga.svg", "home"),
-		email    = NavItem("@", "email"    , "mailto:me@komiga.com"),
-		github   = NavItem(nil, "GitHub"   , "https://github.com/komiga" , "github.svg"),
+		email    = NavItem("@", "email"    , "mailto:me@komiga.com", nil, nil, "single"),
 		twitter  = NavItem(nil, "Twitter"  , "https://twitter.com/komiga", "twitter.svg"),
+		github   = NavItem(nil, "GitHub"   , "https://github.com/komiga" , "github.svg"),
+
+		allopoeia = NavItem("<span>Ω</span>", "Allopoeia", "http://allopoeia.komiga.com", nil, nil, "single omega"),
 	}
 end)
 

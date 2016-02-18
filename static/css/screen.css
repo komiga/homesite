@@ -164,6 +164,17 @@ h6:hover>.para-ref>a
 	font-size: 110%;
 }
 
+.nav-item.single {
+	font-size: 140%;
+}
+
+/* It doesn't feel right with Bitstream Vera Sans!! */
+/* It's not aligned with the @ symbol on the index!!! */
+.nav-item.omega>span {
+	display: block;
+	padding-top: 2px;
+}
+
 a:hover.nav-item {
 	text-decoration: none;
 	color: #000000;
