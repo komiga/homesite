@@ -7,7 +7,7 @@ local NavItem = require "core/NavItem"
 local M = U.module("Section")
 
 local tpl_url = [[<a target="_blank" href="%s">%s</a>]]
-local tpl_ref = [[<a class="para-ref" id="%s" href="#%s"></a>]]
+local tpl_ref = [[<span class="para-ref" id="%s"><a href="#%s"></a></span>]]
 local tpl_content = [[<h%d>%s%s</h%d>]]
 
 local function make(page, name, text, url, id, level, add_nav)
