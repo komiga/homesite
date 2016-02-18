@@ -64,12 +64,11 @@ sup {
 }
 
 .para-ref {
+	visibility: hidden;
 	margin-top: -60px;
 	padding-top: 60px;
 }
 .para-ref>a {
-	display: inline;
-	visibility: hidden;
 	margin: auto 5px auto 5px;
 	padding: 0px 5px 0px 5px;
 	font-weight: normal;
@@ -77,12 +76,12 @@ sup {
 }
 .para-ref>a:before {content: "#";}
 
-h1:hover>.para-ref>a,
-h2:hover>.para-ref>a,
-h3:hover>.para-ref>a,
-h4:hover>.para-ref>a,
-h5:hover>.para-ref>a,
-h6:hover>.para-ref>a
+h1:hover>.para-ref,
+h2:hover>.para-ref,
+h3:hover>.para-ref,
+h4:hover>.para-ref,
+h5:hover>.para-ref,
+h6:hover>.para-ref
 {
 	visibility: visible;
 }
