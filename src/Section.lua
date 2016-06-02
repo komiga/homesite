@@ -7,11 +7,11 @@ function M.nav(page, name, id, level)
 end
 
 function M.sub(page, name, url, id, level)
-	return M.make(page, name, "∗ " .. name, url, id, level or 4)
+	return M.make(page, name, name, url, id, level or 4, false, "∗ ")
 end
 
 function M.item(page, name, url, id, level)
-	return M.make(page, name, name, url, id, level or 4)
+	return M.make(page, name, name, url, id, level or 4, false, "∗ ")
 end
 
 return M
