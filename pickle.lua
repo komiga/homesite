@@ -28,7 +28,7 @@ Core.setup_site(function()
 		twitter  = NavItem(nil, "Twitter"  , "https://twitter.com/komiga", "twitter.svg"),
 		github   = NavItem(nil, "GitHub"   , "https://github.com/komiga" , "github.svg"),
 
-		allopoeia = NavItem("<span>Ω</span>", "Allopoeia", "http://allopoeia.komiga.com", nil, nil, "single omega"),
+		allopoeia = NavItem("<span>Ω</span>", "Allopoeia", "http://allopoeia.komiga.com", nil, nil, "single omega", false),
 	}
 end)
 
