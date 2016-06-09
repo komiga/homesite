@@ -76,20 +76,20 @@
 
 <h1>§ about<span class="para-ref" id="about"><a href="#about"></a></span></h1>
 
-<p>I am Coranna, a quietly intense thinker and crafter from the Seattle, Washington area. My pronouns are ze/zir.</p>
+<p>I am Coranna, a quietly intense thinker and crafter from the Seattle, Washington area.</p>
 
 <p>I write at <a target="_blank" href="http://allopoeia.komiga.com">Allopoeia</a>. Sometimes I make <a target="_blank" href="https://soundcloud.com/komiga/sets/random-va">voices</a> (and imitations of non-voices), <a target="_blank" href="https://soundcloud.com/komiga/sets/things-that-resemble-music">music</a> (maybe), and <a target="_blank" href="https://soundcloud.com/komiga/sets/things-that-resemble-sound">sounds</a>.</p>
 
 <p>I'm currently looking for remote (or very local) programming work and small (low or no budget) collaborative projects. See my <a href="/resume">resumé</a> for more details.</p>
+
+<p><em>My pronouns are ze/zir, but other neutral forms (such as they/them) are acceptable. I encourage the use of explicitly-singular neutral pronouns because, despite how familiar singular they might be, it still has plenty of ambiguities. In other languages, any humanizing neutral pronouns are acceptable (i.e., not “it”).</em></p>
 
 
 <h1>§ code<span class="para-ref" id="code"><a href="#code"></a></span></h1>
 
 <h4>∗ <a target="_blank" href="https://github.com/komiga/pickle">Pickle</a><span class="para-ref" id="pickle"><a href="#pickle"></a></span></h4>
 
-<p>A static site generator. It's more versatile than, say, Jekyll or Hugo (in my opinion, of course), but it has a while to go before the kinks are hammered out.</p>
-
-<p>My websites make good use of it.</p>
+<p>A static site generator. It's more versatile (and usable) than, say, Jekyll or Hugo (in my opinion, of course), but it has a while to go before the kinks are hammered out.</p>
 
 
 <h4>∗ <a target="_blank" href="https://github.com/komiga/precore">precore</a><span class="para-ref" id="precore"><a href="#precore"></a></span></h4>
@@ -104,9 +104,7 @@
 
 <h4>∗ <a target="_blank" href="https://github.com/komiga/togo">togo</a><span class="para-ref" id="togo"><a href="#togo"></a></span></h4>
 
-<p>A C++ data-oriented super-library. It began as a game engine, but I found its design too appealing to leave it all bound up in a high-dependency library. As a result, togo is now composed of multiple components (libraries and tools). I am using it for all of my new projects, largely eschewing the C++ Standard Library.</p>
-
-<p>It is replacing many of the projects I started under earlier, poorer, design principles.</p>
+<p>A C++ data-oriented super-library. It began as a game engine, but I found its design too appealing to leave it all bound up in a high-dependency library. As a result, togo is now composed of multiple components (libraries and tools). The game library is nascent, but the core library is a fully capable (very stdlib-minimal) base library for anything else.</p>
 
 
 <h4>∗ tools<span class="para-ref" id="tools"><a href="#tools"></a></span></h4>
@@ -125,21 +123,43 @@
 </ul>
 
 
-<h4>∗ graveyard<span class="para-ref" id="graveyard"><a href="#graveyard"></a></span></h4>
+<h4>∗ primordium<span class="para-ref" id="primordium"><a href="#primordium"></a></span></h4>
 
-<p>These are bad projects from my early days.</p>
+<p>Slow-growing projects trapped in headspace. (You might be able to goad me into finally tackling these.)</p>
 
 <ul>
-	<li><a target="_blank" href="https://github.com/komiga/am">All the Maths‽</a>: a mathematics library for C++.</li>
+	<li><strong>low-dependency, standalone interface generator for C++</strong>: because multiple declarations are <em>sooooo</em> annoying; see the imperfect kludge that is <a target="_blank" href="https://github.com/komiga/igen">igen</a>.</li>
 
-	<li><a target="_blank" href="https://github.com/komiga/Beard">Beard</a>: a terminal UI for C++.</li>
+	<li><strong>bitbork</strong>: a tool for succinctly &amp; quickly designing and reverse-engineering data formats; programmable translation of tedious/non-trivial formulations to code (e.g., pointing into a blob containing memory-ready data).</li>
 
-	<li><a target="_blank" href="https://github.com/komiga/Cacophony">Cacophony</a>: a serialization library for C++.</li>
+	<li><strong>a programming language with attention to data and reasonable concurrency</strong>: a dreadful potion of C, C++ TMP, Go, Lua, and a dash of Erlang; both compiled and JIT/VM-able (from its own bytecode), complete utilization at build time (metaprogrammable in itself).</li>
 
-	<li><a target="_blank" href="https://github.com/komiga/duct-cpp">duct++</a>: a general-purpose library for C++.</li>
+	<li><strong>reverse-engineering Prince of Qin</strong>: data formats, tools, core (and eventually complete emulation).</li>
 
-	<li><a target="_blank" href="https://github.com/komiga/trait_wrangler">Trait Wrangler</a>: a small trait testing library for C++.</li>
+	<li><strong>reverse-engineering Age of Empires I &amp; II</strong>: data formats, maybe more.</li>
 </ul>
+
+
+<h4>∗ graveyard<span class="para-ref" id="graveyard"><a href="#graveyard"></a></span></h4>
+
+<p>These are bad projects from my nascent days with C++.</p>
+
+<ul>
+	<li><a target="_blank" href="https://github.com/komiga/am">All the Maths‽</a>: an over-engineered mathematics library.</li>
+
+	<li><a target="_blank" href="https://github.com/komiga/Beard">Beard</a>: a terminal UI.</li>
+
+	<li><a target="_blank" href="https://github.com/komiga/Cacophony">Cacophony</a>: a serialization library.</li>
+
+	<li><a target="_blank" href="https://github.com/komiga/ceformat">ceformat</a>: an atrocious constexpr printf-style format parsing and output library.</li>
+
+	<li><a target="_blank" href="https://github.com/komiga/duct-cpp">duct++</a>: a general-purpose library.</li>
+
+	<li><a target="_blank" href="https://github.com/komiga/hord">Hord</a> &amp; <a target="_blank" href="https://github.com/komiga/Onsang">Onsang</a>: the over-protective, over-engineered precursor to Quanta.</li>
+
+	<li><a target="_blank" href="https://github.com/komiga/trait_wrangler">Trait Wrangler</a>: a tiny trait testing library.</li>
+</ul>
+
 
 <h1>§ games<span class="para-ref" id="games"><a href="#games"></a></span></h1>
 
