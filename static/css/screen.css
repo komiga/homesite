@@ -37,8 +37,8 @@ blockquote, q {margin: 20px;}
 ol {list-style: decimal;}
 ul {list-style: disc;}
 
-a			{color: #0080FF; text-decoration: none;}
-/*a:visited	{color: #6800FF;}*/
+a			{color: #0080ff; text-decoration: none;}
+/*a:visited	{color: #6800ff;}*/
 a:hover		{text-decoration: underline;}
 
 em {font-style: italic;}
