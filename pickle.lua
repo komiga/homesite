@@ -14,7 +14,7 @@ P.configure{
 Core.setup_site(function()
 	title = "komiga"
 	url = "http://komiga.com"
-	run_years = "2012–2016"
+	run_years = "2012–2017"
 	md_image = "http://lh4.googleusercontent.com/-fek5nINIJug/UMVJdFtlHVI/AAAAAAAAAHw/sb0KGgMaPPU/k-nrm-256.png"
 
 	analytics_id = "UA-6565507-1"
