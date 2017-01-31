@@ -10,16 +10,22 @@ title = "resumé"
 
 {! Section.nav(C, "cover") !}
 
-<p>I am Coranna Howard, a Seattle area-based programmer and game maker.</p>
+<p>I am Coranna Howard, a programmer and game maker based in the Seattle area.</p>
 
-<p>I started exploring programming at the age of 13, driven by my fascination &amp; curiosity of the mechanisms behind games &amp; software. Through reverse-engineering code and data formats from games, I built up a solid foundation in the practical &amp; theoretical of computer science. This immersion also gave me critical attention to detail and a quirky, explorative style of interaction that tends to break everything (usually without even <em>remotely</em> intending to).</p>
+<p>As a life-long tinkerer and explorer, I am driven by curiosity and careful observation. Though I am observant &amp; thoughtful, I am also open &amp; pragmatic. At the age of 13, my fascination with games and software brought me to programming, beginning with the reverse-engineering and reimplementation of code &amp; data. In those early 5 years, I built a solid foundation in the practical and theoretical of computer science. Subsequently, for 8 years now, I have ventured along a path of questioning, reforming, and expanding this foundation, with a focus on low-level systems and an insatiable pursuit of perfection in simplicity.</p>
 
-<p>In the wider community, I have been an attentive &amp; critical attendant, with contributions to open-source projects such as Pygments, Elixir, Go, GLM, and libc++, among others. From 2012, I have volunteered QA for Linux-based games, covering (to date) 19 games. In the same vein, I am a two-time participant of the game jam Ludum Dare. My less-visible community work spans the Wikimedia wikis and Project Gutenberg.</p>
+<p>Just as I was beginning to explore programming, so too did my professional experience in IT begin. This brought me to many domains, the majority of which involved a significant degree of software engineering. As I navigated these domains, I learned to debate principally and coöperatively, gaining as much forward improvement as possible to square with the reality of legacy software dependence and entrenched policy. Though I am an ardent banner carrier for my principles, I recognize where &amp; how they don't always meet with reality. My professional experience, complemented by the foundation I grew up on, yields a diverse set of practical skills and knowledge.</p>
 
-<p>I am currently seeking remote (or very local) programming &amp; system design work on games, game engines, and tools (in general), or consultation within that domain. Long term, I am seeking tech work on environmental and social betterment (preferably at a PBC/non-profit). I am also open to small (low or no budget) collaborative projects with independent craftspeople.</p>
+<p>It is challenging to concisely communicate the breadth &amp; depth of my interests, but my long history of personal projects is, in turn, also diverse, going from reverse-engineering games, user-patching abandoned games, augmenting game servers, and crafting desktop utilities &mdash; to language (human &amp; machine), games, game engines, game and game server emulation, code generation, terminal UI, build and asset pipeline tooling, complete core libraries, and integrated life-tracking. Beyond the personal, I have spent many of my years helping people learn C++ and a variety of games technology.</p>
+
+<p>In the wider community, I have been an attentive &amp; critical attendant, and my projects quite often lead me to recognize issues that few have encountered. I have contributed to open-source projects such as libc++, GLM, Go, Pygments, SPIR-V, and Elixir, among others. From 2012 to 2014, I volunteered Linux QA for 19 games. In the same vein, I am a two-time participant of the game jam Ludum Dare, where I spend much of my time on community feedback and critique. My less-visible community work spans the Wikimedia wikis and Project Gutenberg.</p>
+
+<p>I am currently seeking contract work and employment in software engineering &amp; design for apps (of many concerns; please inquire), tools, services, scientific instrumentation &amp; research, games, and game engines &mdash; or consultation and research in these areas. I give preference to companies working on environmental &amp; social betterment, public services, and in related civic areas. I am also open to small (low or no budget) collaborative projects with independent craftspeople.</p>
 
 <p><em>Contact me {! anchor_ext("mailto:me@komiga.com", "here") !} and see my public work {! anchor_ext("https://github.com/komiga", "here") !}. Notice also the table of contents in the navigation bar above. If you are on mobile, it can be horizontally scrolled.</em></p>
 
+
+<div class="page-break">
 
 {! Section.nav(C, "professional") !}
 
@@ -51,55 +57,131 @@ title = "resumé"
 
 <p><em>&bullet; part-time, informal contract with Austin Powder Company</em></p>
 
-<p>Numerous small jobs to keep the gears turning: utility software (in Visual Basic 6.0 &amp; .NET, C♯, and BlitzMax), software configuration &amp; deployment, hardware configuration &amp; deployment, documentation, and user support.</p>
+<p>Numerous small jobs to keep the gears turning: utility software (in C♯, C++, Visual Basic 6.0 + .NET, BlitzMax, JScript/WSH, and Windows CMD), software configuration &amp; deployment, hardware configuration &amp; deployment, documentation, and user support.</p>
 
+</div>
+
+<div class="page-break">
 
 {! Section.nav(C, "open source") !}
 
-{! Section.sub(C, "personal projects <sup>&dagger;</sup>", nil, "open-source-personal") !}
+{! Section.sub(C, "personal projects", nil, "open-source-personal") !}
+
+<p><em>A selection of active projects, for the sake of brevity. Also excluded are some experimental projects and those in incubation.</em></p>
 
 <ul>
-	<li>{! anchor_ext("https://github.com/komiga/togo", "togo") !} &mdash; data-oriented super-library for applications &amp; games (C++)</li>
-
-	<li>{! anchor_ext("https://github.com/komiga/quanta", "Quanta") !} &mdash; adaptive tracking toolkit (C++, Lua)</li>
-
-	<li>{! anchor_ext("https://github.com/komiga/pickle", "Pickle") !} &mdash; static site generator (C++, Lua)</li>
-
-	<li>{! anchor_ext("https://github.com/komiga/precore", "precore") !} &mdash; Premake 4.4 extension (Lua)</li>
-
-	<li>{! anchor_ext("https://github.com/komiga/include_sort", "include_sort") !} &mdash; inclusion sorter for C &amp; C++ (Lua)</li>
-
-	<li>{! anchor_ext("https://github.com/komiga/igen", "igen") !} &mdash; libclang-based interface generator for C++ (Python)</li>
+	<li>
+		<p>{! anchor_ext("https://github.com/komiga/togo", "togo") !} &mdash; super-library for apps &amp; games (C++, Lua)</p>
+		<ul>
+			<li>Data-oriented design, open types, open interfaces.</li>
+			<li>Digestible alternative to the C++ Standard Library.</li>
+			<li>Game engine (WIP) with pipeline tooling.</li>
+			<li>Imaging and windowing.</li>
+		</ul>
+	</li>
+	<li>
+		<p>{! anchor_ext("https://github.com/komiga/quanta", "Quanta") !} &mdash; adaptive tracking toolkit (C++, Lua)</p>
+		<ul>
+			<li>Expressive time and nutrition tracker, WIP Android companion.</li>
+			<li>Universal description language (English read- &amp; write-able).</li>
+			<li>Extendable, rapid-iteration tooling and data analytics with Lua.</li>
+			<li>Linux integration (CLI tools, data vessels).</li>
+		</ul>
+	</li>
+	<li>
+		<p>{! anchor_ext("https://github.com/komiga/pickle", "Pickle") !} &mdash; static site generator (C++, Lua)</p>
+		<ul>
+			<li>Non-dogmatic; user controls structure.</li>
+			<li>Lua-based template language and userspace.</li>
+			<li>Bare-bones web server for rapid iteration.</li>
+		</ul>
+	</li>
+	<li>
+		<p>{! anchor_ext("https://github.com/komiga/precore", "precore") !} &mdash; Premake 4.4 extension (Lua)</p>
+		<ul>
+			<li>Modularity &amp; reusability layer atop Premake.</li>
+		</ul>
+	</li>
+	<li>
+		<p>{! anchor_ext("https://github.com/komiga/igen", "igen") !} &mdash; interface generator for C++ (Python, libclang)</p>
+		<ul>
+			<li>Generates function declarations (preserving docs) from their implementations.</li>
+		</ul>
+	</li>
+	<li>
+		<p>{! anchor_ext("https://github.com/komiga/include_sort", "include_sort") !} &mdash; inclusion sorter for C &amp; C++ (Lua)</p>
+		<ul>
+			<li>Sorts <code>#include</code> statements in user-defined order.</li>
+		</ul>
+	</li>
 </ul>
 
-<p><small>&dagger; &mdash; Desert of gravestones not shown.</small></p>
+</div>
+
+<div class="page-break">
 
 {! Section.sub(C, "major contributions", nil, "open-source-major") !}
 
 <ul>
-	<li>{! anchor_ext("http://www.openhub.net/p/mooege", "mooege") !}<sup>&Dagger;</sup> &mdash; <em>Diablo 3</em> server emulator (C♯, community; co-architect &amp; manager)</li>
+	<li>
+		<p>{! anchor_ext("http://www.openhub.net/p/mooege", "mooege") !}<sup>†‡</sup> &mdash; <em>Diablo 3</em> server emulator (C♯)</p>
+		<ul>
+			<li>Networking (Battle.net, game layer), game world, Linux support.</li>
+			<li>Asset RE, packet RE, Protocol Buffer implementations, documentation.</li>
+			<li>Designed prospective production-grade server architecture.</li>
+			<li>Later: PR arbiter/project manager, working with many important contributors.</li>
+			<li>Co-architect alongside Hüseyin Uslu.</li>
+		</ul>
+	</li>
 
-	<li>{! anchor_ext("https://github.com/maximos", "Maximus") !} &mdash; module manager (BlitzMax, joint; CLI client architect)</li>
+	<li>
+		<p>{! anchor_ext("https://github.com/maximos", "Maximus") !}<sup>†</sup> &mdash; module manager (BlitzMax)</p>
+		<ul>
+			<li>Core architecture and command-line client.</li>
+			<li>Joint project with Christiaan Kras, who maintained GUI client &amp; web service.</li>
+		</ul>
+	</li>
 
-	<li>{! anchor_ext("http://pygments.org/", "Pygments") !} &mdash; syntax highlighter (Python; created BlitzMax lexer)</li>
+	<li>
+		<p>{! anchor_ext("http://pygments.org/", "Pygments") !} &mdash; syntax highlighter (Python)</p>
+		<ul>
+			<li>BlitzMax support.</li>
+		</ul>
+	</li>
 
-	<li>{! anchor_ext("https://github.com/jteeuwen/spirv", "SPIR-V") !} &mdash; SPIR-V binary {de|en}coder (Go)</li>
+	<li>
+		<p>{! anchor_ext("https://github.com/jteeuwen/spirv", "spirv") !}<sup>†</sup> &mdash; SPIR-V binary {de|en}coder (Go)</p>
+		<ul>
+			<li>Implementation of the provisional specification.</li>
+			<li>Contributed fixes upstream (Khronos).</li>
+			<li>Co-architect alongside Jim Teeuwen.</li>
+		</ul>
+	</li>
 </ul>
 
-<p><small>&Dagger; &mdash; {! anchor_ext("http://www.openhub.net/p/mooege/contributors/2518259584869112", "Commit history") !} from beyond the Blizzard Grave.</small></p>
+<p><small>
+	† &mdash; Defunct.
+	<br />
+	‡ &mdash; {! anchor_ext("http://www.openhub.net/p/mooege/contributors/2518259584869112", "Commit history") !}.
+</small></p>
 
 {! Section.sub(C, "minor contributions", nil, "open-source-minor") !}
 
+<p><em>A selection.</em></p>
+
 <ul>
+	<li>{! anchor_ext("https://libcxx.llvm.org/", "libc++") !} (C++)</li>
+
 	<li>{! anchor_ext("http://glm.g-truc.net/", "GLM") !} (C++)</li>
 
-	<li>{! anchor_ext("http://golang.org/ref/spec", "Golang Specification") !}</li>
+	<li>{! anchor_ext("https://github.com/go-gl/gltext", "gltext") !} (Go)</li>
 
 	<li>{! anchor_ext("https://www.khronos.org/spir", "SPIR-V Specification (provisional)") !}</li>
 
+	<li>{! anchor_ext("http://golang.org/ref/spec", "Golang Specification") !}</li>
+
 	<li>{! anchor_ext("http://elixir-lang.org/getting-started/introduction.html", "Elixir Getting Started tutorial") !}</li>
 </ul>
-
 
 {! Section.nav(C, "volunteer") !}
 
@@ -116,18 +198,19 @@ title = "resumé"
 
 {! Section.nav(C, "games") !}
 
-<p>Game jam games:</p>
+{! Section.sub(C, "Ludum Dare", nil, "games-jams") !}
 
 <ul>
-	<li>{! anchor_ext("http://www.ludumdare.com/compo/ludum-dare-26/?action=preview&amp;uid=14542", "Prisma") !} &mdash; a color-based twitch puzzler full of secrets (Ludum Dare 26, Lua, 35.1h)</li>
+	<li>LD26: {! anchor_ext("http://www.ludumdare.com/compo/ludum-dare-26/?action=preview&amp;uid=14542", "Prisma") !} &mdash; a color-based twitch puzzler full of secrets (Lua, LÖVE, 35.1h)</li>
 
-	<li>{! anchor_ext("http://www.ludumdare.com/compo/ludum-dare-30/?action=preview&amp;uid=14542", "Onomo") !} &mdash; a slow, dark platformer concept (Ludum Dare 30, Lua, 34.7h)</li>
+	<li>LD30: {! anchor_ext("http://www.ludumdare.com/compo/ludum-dare-30/?action=preview&amp;uid=14542", "Onomo") !} &mdash; a slow, dark platformer concept (Lua, LÖVE, 34.7h)</li>
 </ul>
 
+<div class="page-break">
 
 {! Section.nav(C, "education") !}
 
-<p>Home-schooled; exclusively self-taught in final 3&ndash;4 years. Autodidact computer programmer and ever-curious craftsperson (bookbinding, wood working, and tool making, among many others).</p>
+<p>Home-schooled; exclusively self-taught in final 4 years. Autodidact computer programmer and ever-curious craftsperson (bookbinding, wood working, and tool making, among many others).</p>
 
 <p>Coursework:</p>
 
@@ -142,14 +225,20 @@ title = "resumé"
 
 {! Section.nav(C, "familiarity") !}
 
+<p><em>This section serves as a search-catch and as a summary of my experience.</em></p>
+
+<p><em>See {! anchor("#familiarity-rank-key", "below") !} for rank key.</em></p>
+
 {! Section.sub(C, "concepts &amp; domains", nil, "familiarity-concepts") !}
 
 <ul>
 	<li><strong>API &amp; system design</strong> &mdash; extensive: very many API projects, strong attention to detail, strong architectural cohesion mindset</li>
 
-	<li><strong>algorithms &amp; data structures / abstract data types</strong> &mdash; extensive: many uses of non-trivial structures &amp; algorithms, basic complexity analysis; task distribution, hashing, PRNGs, graphs, tries, hash tables, priority queues, stacks, radix sort, merge sort, quick sort, LZW, Huffman coding, RLE; intermediate-level education, strong intuition</li>
+	<li><strong>algorithms &amp; data structures / abstract data types</strong> &mdash; extensive: many uses of non-trivial structures &amp; algorithms; task distribution, hashing, PRNGs, graphs, tries, hash tables, priority queues, stacks, radix sort, merge sort, quick sort, LZW, Huffman coding, RLE; basic complexity analysis; intermediate-level education, strong intuition</li>
 
 	<li><strong>data storage</strong> &mdash; proficient: very strong understanding of binary &amp; text formats, proficient in non-trivial serialization</li>
+
+	<li><strong>language, parsing, pattern matching</strong> &mdash; extensive: a universal description language, a Quake-like, and a JSON-like; multiple uses of Lua as a DSL</li>
 
 	<li><strong>reverse-engineering</strong> &mdash; extensive: data &amp; algorithms for a handful of games, several cryptographic breaks</li>
 
@@ -163,8 +252,12 @@ title = "resumé"
 
 	<li><strong>cryptography &amp; security</strong> &mdash; narrow: daily PGP use, basic practical implementation &ndash; I won't store passwords unsalted, or use SHA1, or send your boss's (nor their boss's) plaintext credentials to IT</li>
 
-	<li><strong>time tracking</strong> &mdash; proficient: daily, very detailed (beyond work)</li>
+	<li><strong>time tracking</strong> &mdash; proficient: daily, very detailed (beyond work), personal software</li>
 </ul>
+
+</div>
+
+<div class="page-break">
 
 {! Section.sub(C, "languages", nil, "familiarity-languages") !}
 
@@ -177,9 +270,9 @@ title = "resumé"
 
 	<li><strong>C</strong> <em>(89&ndash;11)</em> &mdash; extensive</li>
 
-	<li><strong>C♯</strong> <em>(2.0&ndash;5.0, .NET, Mono)</em> &mdash; wide: large emulation project, several applications, professional</li>
+	<li><strong>C♯</strong> <em>(2.0&ndash;5.0, .NET, Mono)</em> &mdash; wide: large emulation project, several apps, professional</li>
 
-	<li><strong>Python</strong> <em>(2&ndash;3)</em> &mdash; wide: large Blender automation project, several small utility projects</li>
+	<li><strong>Python</strong> <em>(2&ndash;3)</em> &mdash; wide: large Blender automation project, several utilities</li>
 
 	<li><strong>Go</strong> <em>(0.x&ndash;1.x)</em> &mdash; narrow: community projects, some language spec fixes</li>
 
@@ -187,7 +280,7 @@ title = "resumé"
 
 	<li><strong>CSS</strong> <em>(2.1&ndash;3)</em> &mdash; narrow</li>
 
-	<li><strong>JavaScript / ECMAScript</strong> <em>(4&ndash;6)</em> &mdash; narrow: several websites, little use of the usual suspects, professional</li>
+	<li><strong>JavaScript / ECMAScript</strong> <em>(4&ndash;6)</em> &mdash; narrow: several websites, professional</li>
 
 	<li><strong>Java</strong> <em>(SE 6)</em> &mdash; narrow: coursework</li>
 
@@ -196,6 +289,8 @@ title = "resumé"
 	<li><strong>BlitzMax</strong> &mdash; proficient: many projects, professional</li>
 
 	<li><strong>Bash</strong> &mdash; extensive: daily</li>
+
+	<li><strong>Windows CMD</strong> &mdash; extensive: professional</li>
 
 	<li><strong>Assembly</strong> <em>(Intel, x86)</em> &mdash; narrow</li>
 
@@ -225,7 +320,7 @@ title = "resumé"
 
 	<li><strong>GLFW</strong> <em>(2.x&ndash;3.x)</em> &mdash; extensive</li>
 
-	<li><strong>LÖVE</strong> &mdash; extensive: several projects</li>
+	<li><strong>LÖVE</strong> &mdash; extensive</li>
 
 	<li><strong>Stingray / bitsquid</strong> &mdash; narrow: extensive architectural knowledge, no direct use</li>
 
@@ -233,7 +328,9 @@ title = "resumé"
 
 	<li><strong>GameBryo</strong> &mdash; minimal: modding <em>The Elder Scrolls IV: Oblivion</em></li>
 
-	<li><strong>GameMaker, Unity, Unreal, XNA / FNA / MonoGame</strong> &mdash; minimal: basic architectural knowledge through QA &amp; debugging, no direct use</li>
+	<li><strong>GameMaker</strong> &mdash; narrow: dabbling, professional</li>
+
+	<li><strong>Unity, Unreal, XNA / FNA / MonoGame</strong> &mdash; minimal: basic architectural knowledge through QA &amp; debugging, no direct use</li>
 
 	<li><strong>LLVM</strong> &mdash; narrow: tooling</li>
 
@@ -244,10 +341,14 @@ title = "resumé"
 	<li><strong>React</strong> &mdash; minimal</li>
 </ul>
 
+</div>
+
+<div class="page-break">
+
 {! Section.sub(C, "software", nil, "familiarity-software") !}
 
 <ul>
-	<li><strong>Linux</strong> <em>(Ubuntu, Debian)</em> &mdash; extensive: daily</li>
+	<li><strong>Linux</strong> <em>(Ubuntu, Debian)</em> &mdash; proficient: daily</li>
 
 	<li><strong>git</strong> &mdash; extensive: daily</li>
 
@@ -257,7 +358,7 @@ title = "resumé"
 
 	<li><strong>Premake</strong> <em>(4.x)</em> &mdash; proficient: daily</li>
 
-	<li><strong>GNU Make</strong> &mdash; narrow</li>
+	<li><strong>GNU Make</strong> &mdash; wide</li>
 
 	<li><strong>Sublime Text</strong> <em>(2)</em> &mdash; proficient: daily</li>
 
@@ -275,17 +376,17 @@ title = "resumé"
 
 	<li><strong>AdminStudio</strong> &mdash; extensive: professional</li>
 
-	<li><strong>Windows</strong> <em>(XP, 7&ndash;8.1)</em> &mdash; extensive: professional, personally maybe a week or two every year&hellip;</li>
+	<li><strong>Windows</strong> <em>(XP, 7&ndash;8.1)</em> &mdash; extensive</li>
 </ul>
 
 {! Section.sub(C, "spoken language", nil, "familiarity-spoken-language") !}
 
 <ul>
-	<li><strong>English</strong> <em>(U.S.)</em> &mdash; proficient: first language</li>
+	<li><strong>English</strong> <em>(U.S.&ndash;U.K. hybrid; U.S. dominant)</em> &mdash; proficient: first language</li>
 
-	<li><strong>Japanese</strong> &mdash; narrow: pronunciation, kana, few kanji, few phrases</li>
+	<li><strong>French</strong> <em>(Standard/Metropolitan)</em> &mdash; narrow: actively learning</li>
 
-	<li><strong>French</strong> &mdash; minimal</li>
+	<li><strong>Japanese</strong> <em>(Eastern/Tokyo)</em> &mdash; minimal: pronunciation, kana, few kanji, few phrases</li>
 
 	<li><strong>Greek</strong> <em>(Koine)</em> &mdash; minimal: pronunciation, script</li>
 </ul>
@@ -299,3 +400,5 @@ title = "resumé"
 	<li>narrow</li>
 	<li>minimal</li>
 </ol>
+
+</div>
