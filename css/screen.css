@@ -93,8 +93,12 @@ h6:hover>.para-ref
 	page-break-inside: avoid;
 }
 
-.print-hide {
-	display: none;
+.print-hide {}
+
+@media print {
+	.print-hide {
+		display: none;
+	}
 }
 
 .print-only {}
