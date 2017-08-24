@@ -52,7 +52,8 @@
 </article>
 
 <footer class="footer">
-	<span>&copy; {{ Site.run_years }} komiga</span>
+	<div><span>&copy; {{ Site.run_years }} komiga</span></div>
+	<div><a class="print-grayscale" href="{! canonical_url(C.url, true) !}" title="last modified">{@ "core/bits/page_last_updated" @}</a></div>
 </footer>
 
 </div>
