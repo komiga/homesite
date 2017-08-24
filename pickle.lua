@@ -1,10 +1,10 @@
 
+local FS = require "togo.filesystem"
 local P = require "Pickle"
 local F = require "Pickle.Filter"
 local Core = require "core/Core"
-local Layout = require "core/Layout"
-local Page = require "core/Page"
 local NavItem = require "core/NavItem"
+local Composition = require "src/Composition"
 local Section = require "src/Section"
 
 P.configure{
@@ -33,7 +33,7 @@ Core.setup_site(function(_ENV)
 end)
 
 P.filter("static", F.copy)
-P.filter("layout", Layout)
-P.filter("page", Page)
+P.filter("layout", Composition.layout)
+P.filter("page", Composition.page)
 
 Core.setup_filters()
