@@ -17,7 +17,12 @@
 
 	{@ "core/bits/analytics_script" @}
 </head>
+
+{% if C.body_class then %}
+<body class="{{ C.body_class }}">
+{% else %}
 <body>
+{% end %}
 
 <div class="navbar">
 	<nav>
