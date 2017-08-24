@@ -183,20 +183,16 @@ h6:hover > .para-ref
 	height: 48px;
 	white-space: nowrap;
 	font-size: 18px;
+	overflow: hidden;
 }
 
 .navbar > nav {
 	display: block;
-	overflow: hidden;
+	overflow-x: visible;
+	overflow-y: hidden;
 	background-color: #000;
 	height: 48px;
-}
-
-@media only (max-width: 801px) {
-	.navbar > nav {
-		overflow-x: auto;
-		overflow-y: hidden;
-	}
+	padding-bottom: 20px;
 }
 
 .navbar > nav > ul {
