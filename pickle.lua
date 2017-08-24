@@ -22,8 +22,8 @@ Core.setup_site(function(_ENV)
 	human_date_format = "%d %B %Y"
 
 	nav = {
-		home     = NavItem(nil, "top"      , "#", "komiga.svg", "home"),
-		backhome = NavItem(nil, "main page", "/", "komiga.svg", "home"),
+		root     = NavItem(nil, "top"      , "#", "komiga.svg", "root"),
+		backroot = NavItem(nil, "main page", "/", "komiga.svg", "root"),
 		email    = NavItem("@", "email"    , "mailto:me@komiga.com", nil, nil, "single"),
 		twitter  = NavItem(nil, "Twitter"  , "https://twitter.com/komiga", "twitter.svg"),
 		github   = NavItem(nil, "GitHub"   , "https://github.com/komiga" , "github.svg"),

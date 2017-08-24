@@ -23,9 +23,9 @@
 	<nav>
 		<ul>
 		{% if C.url == "/index.html" then %}
-		{{ Site.nav.home }}
+		{{ Site.nav.root }}
 		{% else %}
-		{{ Site.nav.backhome }}
+		{{ Site.nav.backroot }}
 		{% end %}
 
 		{% for _, item in ipairs(C.nav) do %}
