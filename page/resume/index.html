@@ -1,164 +1,249 @@
 layout = "generic"
+body_class = "document"
 nav = {
+	Site.nav.allopoeia,
+	Site.nav.twitter,
 	Site.nav.github,
 	Site.nav.email,
+	NavItem("PDF", "PDF version", canonical_url("/komiga-resume-2017-08-24.pdf", true), nil, nil, "small"),
 	NavItem(),
 }
 
 title = "resumé"
 ---content---
 
-<p class="print-only"><a target="_blank" href="http://komiga.com/resume">online version</a> (preferred) | <a target="_blank" href="mailto:me@komiga.com">me@komiga.com</a> | <a target="_blank" href="https://github.com/komiga">GitHub</a></p>
+{! Section.nav_left(C, "Coranna Howard", "bio", "bio") !}
 
-{! Section.nav(C, "cover") !}
+<p>A programmer and artist from the Seattle, Washington area who is skilled in technical writing, vocational teaching, data architecture &amp; reverse-engineering, software repackaging, and the design &amp; implementation of low-level APIs.</p>
 
-<p>I'm Coranna Howard, a programmer and game maker based in the Seattle area.</p>
+{! Section.close(C) !}
 
-<p>Growing up surrounded by computers, I quickly developed a fascination with games &amp; software. At the age of 13, this naturally brought me to programming, beginning with the reverse-engineering and reimplementation of software &amp; data. In those early 5 years, I built a solid foundation in the practical and theoretical of computer science. Subsequently, for 8 years now, I have ventured along a path of questioning, reforming, and expanding this foundation, with a focus on low-level systems and an insatiable pursuit of perfection in simplicity. As a life-long tinkerer and explorer, I am driven by curiosity and careful observation, but this thoughtfulness is checked by pragmatism.</p>
+{! Section.nav_right(C, "www") !}
 
-<p>Shortly after I began exploring programming, I started working in IT. This brought me to many domains, the majority of which involved a significant degree of software engineering. As I navigated these domains, I learned to debate principally and coöperatively, gaining as much forward improvement as possible to square with the reality of legacy software dependence and entrenched policy. Though I am an ardent banner carrier for my principles, I recognize where &amp; how they don't always meet with reality. My professional experience, complemented by the foundation I grew up on, yields a diverse set of practical skills and knowledge.</p>
+<ul class="label-list">
+	<li>email</li>
+	<li>github</li>
+	<li>website</li>
+	<li>updated</li>
+</ul>
+<ul class="list-styleless">
+	<li>{! anchor_ext("mailto:me@komiga.com", "me@komiga.com", true) !}</li>
+	<li>{! anchor_ext("https://github.com/komiga", "github.com/komiga", true) !}</li>
+	<li>{! anchor(canonical_url("", true), "komiga.com") !}<strong>/</strong>{! anchor(canonical_url("/#code", true), "#code") !}</li>
+	<li>{! format_time(require("togo.filesystem").time_last_modified(C.page_source), "%Y-%m-%d") !}</li>
+</ul>
 
-<p>It is challenging to concisely communicate the breadth &amp; depth of my interests, but my long history of personal projects is, in turn, also diverse, going from reverse-engineering games, user-patching abandoned games, augmenting game servers, and crafting desktop utilities &mdash; to language (human &amp; machine), games, game engines, game and game server emulation, code generation, terminal UI, build and asset pipeline tooling, complete core libraries, and integrated life-tracking software.</p>
+{! Section.close(C) !}
 
-<p>In the wider community, I have been an attentive attendant and teacher, having spent many of my years helping people learn C++ and a variety of games technology. I have contributed to open-source projects such as libc++, GLM, Go, Pygments, SPIR-V, and Elixir, among others. From 2012 to 2014, I volunteered Linux QA for 19 games. In the same vein, I am a two-time participant of the game jam Ludum Dare, where I spend much of my time on community feedback and critique. My less-visible community work spans the Wikimedia wikis and Project Gutenberg.</p>
+<div class="vspace clear-section"></div>
 
-<p>I am currently seeking contract work and employment in software engineering, design, and technical writing for apps (of many concerns; please inquire), tools, services, science/studies, games (especially porting), and game engines &mdash; or consultation and research in these areas. I give preference to companies or governments working on environmental &amp; social betterment, public services, and in related civic areas. I am also open to small (low or no budget) collaborative projects with independent craftspeople.</p>
-
-<p class="print-hide"><em>Contact me {! anchor_ext("mailto:me@komiga.com", "here") !} and see my public work {! anchor_ext("https://github.com/komiga", "here") !}. Notice also the table of contents in the navigation bar above. If you are on mobile, it can be horizontally scrolled.</em></p>
+{! Section.nav_left(C, "professional work", "pro-work", "professional") !}
 
 
-<div class="print-break">
+{! Section.sub(C, "self-employed &mdash; Tacoma, WA, U.S.A.", nil, "pro-work-self-1") !}
 
-{! Section.nav(C, "work history", "work") !}
+{! Section.item(C, "<strong>2014&ndash;present</strong> &mdash; personal, gigs", nil, "pro-work-self-1") !}
 
-{! Section.sub(C, "2011&ndash;2014 &mdash; software repackaging", nil, "work-5") !}
+<p>Started {! anchor_ext("https://github.com/komiga/togo", "togo") !} and {! anchor_ext("https://github.com/komiga/quanta", "Quanta") !}, tackled gigs in a medley of fields, and consulted on healthy tech work culture.</p>
 
-<p><em>&bullet; 3 years &amp; 5 months, contract with Austin Powder Company</em></p>
 
-<p>Architect of packaging methodology &amp; software repository. Built and maintained 675+ packages (approximately 211 unique products across 75 vendors) for a network of 850 Windows computers. Documented packaging methodology &amp; structure and taught client's employees in the art of repackaging.</p>
+{! Section.sub(C, "Austin Powder &mdash; Cleveland, OH, U.S.A.", "http://austinpowder.com/home", "pro-work-ap") !}
 
-{! Section.sub(C, "2009 &mdash; software deployment", nil, "work-4") !}
+{! Section.item(C, "<strong>2011&ndash;2014</strong> &mdash; software repackaging", nil, "pro-work-ap-5") !}
 
-<p><em>&bullet; &lt;1 month, contract with Austin Powder Company</em></p>
+<p>Architect of packaging methodology &amp; repository of 675+ packages (approximately 211 products across 75 vendors) for a network of 850 Windows computers. Documented methodology &amp; structure and taught the art of repackaging.</p>
 
-<p>Remotely installed &amp; configured Lotus Notes upgrades.</p>
+{! Section.item(C, "<strong>2009</strong> &mdash; software deployment", nil, "pro-work-ap-4") !}
 
-{! Section.sub(C, "2009 &mdash; hardware deployment", nil, "work-3") !}
+<p>Installed and configured Lotus Notes upgrades.</p>
 
-<p><em>&bullet; &lt;1 month, contract with Austin Powder Company</em></p>
+{! Section.item(C, "<strong>2009</strong> &mdash; hardware deployment", nil, "pro-work-ap-3") !}
 
 <p>Configured and shipped approximately 70 Wyse terminals to client's offices.</p>
 
-{! Section.sub(C, "2008 &mdash; hardware deployment", nil, "work-2") !}
+{! Section.item(C, "<strong>2008</strong> &mdash; hardware deployment", nil, "pro-work-ap-2") !}
 
-<p><em>&bullet; &lt;1 month, contract with Austin Powder Company</em></p>
+<p>Configured and deployed 65 computers with Windows XP. Built cross-platform software to track assignment &amp; completion of each device and to allow project manager to securely share user info with the technician.</p>
 
-<p>Configured and deployed 65 replacement computers with Windows XP. Prior to deployment, I built cross-platform software to track assignment &amp; completion of each device and to allow the project manager to securely share user information with the technician.</p>
+{! Section.item(C, "<strong>~2005&ndash;2008</strong> &mdash; IT assistance", nil, "pro-work-ap-1") !}
 
-{! Section.sub(C, "~2005&ndash;2008 &mdash; IT assistance", nil, "work-1") !}
+<p>Numerous small jobs to keep the gears turning: utility software in various languages, software &amp; hardware configuration &amp; deployment, documentation, and user support.</p>
 
-<p><em>&bullet; part-time, informal contract with Austin Powder Company</em></p>
+{! Section.close(C) !}
 
-<p>Numerous small jobs to keep the gears turning: utility software (in C♯, C++, Visual Basic 6.0 + .NET, BlitzMax, JScript/WSH, and Windows CMD), software configuration &amp; deployment, hardware configuration &amp; deployment, documentation, and user support.</p>
 
-</div>
+{! Section.grid_right(C) !}
 
-<div class="print-break">
+{! Section.nav(C, "skills") !}
 
-{! Section.nav(C, "projects") !}
+{! Section.grid_left(C, 40) !}
+<ul class="list-styleless">
+	<li>C, C++</li>
+	<li>C♯</li>
+	<li>Lua</li>
+	<li>Python</li>
+	<li>Clang, GCC</li>
+	<li>git</li>
+</ul>
+{! Section.close_grid(C) !}
 
-{! Section.sub(C, "personal", nil, "projects-personal") !}
+{! Section.grid_right(C, 60) !}
+<ul class="list-styleless">
+	<li>make, Premake</li>
+	<li>Bash, CMD</li>
+	<li>Linux, POSIX</li>
+	<li>Windows, WinAPI</li>
+	<li>Excel, GSheets</li>
+	<li>Blender, GIMP</li>
+</ul>
+{! Section.close_grid(C) !}
 
-<p><em>A selection of active personal projects, for the sake of brevity. Also excluded are some experimental projects and those in incubation.</em></p>
+{! Section.close(C) !}
 
-<ul>
-	<li>
-		<p>{! anchor_ext("https://github.com/komiga/togo", "togo") !} &mdash; super-library for apps &amp; games <em>(C++, Lua)</em></p>
-		<ul>
-			<li>Data-oriented design, open types, open interfaces.</li>
-			<li>Digestible alternative to the C++ Standard Library.</li>
-			<li>Game engine (WIP) with pipeline tooling.</li>
-			<li>Imaging and windowing.</li>
-		</ul>
-	</li>
-	<li>
-		<p>{! anchor_ext("https://github.com/komiga/quanta", "Quanta") !} &mdash; adaptive tracking toolkit <em>(C++, Lua)</em></p>
-		<ul>
-			<li>Expressive time and nutrition tracker, WIP Android companion.</li>
-			<li>Universal description language (English read- &amp; write-able).</li>
-			<li>Extendable, rapid-iteration tooling and data analytics with Lua.</li>
-			<li>Linux integration (CLI tools, data vessels).</li>
-		</ul>
-	</li>
-	<li>
-		<p>{! anchor_ext("https://github.com/komiga/pickle", "Pickle") !} &mdash; static site generator <em>(C++, Lua)</em></p>
-		<ul>
-			<li>Non-dogmatic; user controls structure.</li>
-			<li>Lua-based template language and userspace.</li>
-			<li>Bare-bones web server for rapid iteration.</li>
-		</ul>
-	</li>
-	<li>
-		<p>{! anchor_ext("https://github.com/komiga/precore", "precore") !} &mdash; Premake 4.4 extension <em>(Lua)</em></p>
-		<ul>
-			<li>Modularity &amp; reusability layer atop Premake.</li>
-		</ul>
-	</li>
-	<li>
-		<p>{! anchor_ext("https://github.com/komiga/igen", "igen") !} &mdash; interface generator for C++ <em>(Python, libclang)</em></p>
-		<ul>
-			<li>Generates function declarations (preserving docs) from their implementations.</li>
-		</ul>
-	</li>
-	<li>
-		<p>{! anchor_ext("https://github.com/komiga/include_sort", "include_sort") !} &mdash; inclusion sorter for C &amp; C++ <em>(Lua)</em></p>
-		<ul>
-			<li>Sorts <code>#include</code> statements in user-defined order.</li>
-		</ul>
-	</li>
+<div class="clear-section"></div>
+
+{! Section.nav(C, "volunteer work", nil, "volunteer") !}
+
+{! Section.sub(C, "scientific research", nil, "volunteer-work-sci") !}
+
+<ul class="list-chrono">
+	<li><strong>'15&ndash;present</strong> &mdash; HCI thesis on trans people <em>(identity withheld to prevent deanonymization)</em></li>
 </ul>
 
-</div>
+{! Section.sub(C, "Linux videogame QA", nil, "volunteer-work-linux-vg-qa") !}
 
-<div class="print-break">
+<ul class="list-chrono">
+	<li><strong>'12&ndash;'14</strong> &mdash; Humble Inc., 17 games</li>
+	<li><strong>'12</strong> &mdash; Santa Ragione, {! anchor_ext("http://www.fotonica-game.com/", "Fotonica") !}</li>
+	<li><strong>'12</strong> &mdash; Subsoap, {! anchor_ext("http://www.faeriesolitaire.com/", "Faerie Solitaire") !}</li>
+</ul>
 
-{! Section.sub(C, "major contributions", nil, "projects-contrib-major") !}
+{! Section.close(C) !}
 
-<ul>
-	<li>
-		<p>{! anchor_ext("http://www.openhub.net/p/mooege", "mooege") !}<sup>†‡</sup> &mdash; <em>Diablo 3</em> server emulator <em>(C♯)</em></p>
-		<ul>
-			<li>Networking (Battle.net, game layer), game world, Linux support.</li>
-			<li>Asset RE, packet RE, Protocol Buffer implementations, documentation.</li>
-			<li>Designed prospective production-grade server architecture.</li>
-			<li>Later: PR arbiter/project manager, working with many important contributors.</li>
-			<li>Co-architect alongside Hüseyin Uslu.</li>
-		</ul>
-	</li>
+{! Section.nav(C, "background") !}
 
-	<li>
-		<p>{! anchor_ext("https://github.com/maximos", "Maximus") !}<sup>†</sup> &mdash; module manager <em>(BlitzMax)</em></p>
-		<ul>
-			<li>Core architecture and command-line client.</li>
-			<li>Joint project with Christiaan Kras, who maintained GUI client &amp; web service.</li>
-		</ul>
-	</li>
+<ul class="list-chrono">
+	<li><strong>'13&ndash;'14</strong> &mdash; <em>{! anchor_ext("https://www.coursera.org/course/algs4partII", "Algorithms, Part II") !}</em></li>
+	<li><strong>'13 × 2</strong> &mdash; <em>{! anchor_ext("https://www.coursera.org/course/algs4partI", "Algorithms, Part I") !}</em></li>
+	<li><strong>'11</strong> &mdash; <em>Repackaging and Application Migration using AdminStudio 9.5</em></li>
+	<li><strong>post sec., CS</strong> &mdash; autodidact</li>
+	<li><strong>K-12</strong> &mdash; autodidact / homeschool</li>
+	<li><strong>English</strong> &mdash; <em>C1-C2</em>, U.S.&ndash;U.K. hybrid</li>
+	<li><strong>French</strong> &mdash; <em>A1</em>, Standard/Metro.</li>
+</ul>
 
-	<li>
-		<p>{! anchor_ext("http://pygments.org/", "Pygments") !} &mdash; syntax highlighter <em>(Python)</em></p>
-		<ul>
-			<li>BlitzMax support.</li>
-		</ul>
-	</li>
+{! Section.close(C) !}
 
-	<li>
-		<p>{! anchor_ext("https://github.com/jteeuwen/spirv", "spirv") !}<sup>†</sup> &mdash; SPIR-V binary {de|en}coder <em>(Go)</em></p>
-		<ul>
-			<li>Implementation of the provisional specification.</li>
-			<li>Contributed fixes upstream (Khronos).</li>
-			<li>Co-architect alongside Jim Teeuwen.</li>
-		</ul>
-	</li>
+{! Section.close_grid(C) !}
+
+<div class="vspace clear-section print-break"></div>
+
+{! Section.grid_left(C) !}
+{! Section.nav(C, "hackathons") !}
+
+<ul class="list-chrono">
+
+<li>
+	<strong>2017</strong> &mdash; {! anchor_ext("https://github.com/komiga/mpt-hackathon", "ParkPoints") !}, a gamified park participation app (for <em>Parks and People United Through Technology</em> by Metro Parks Tacoma)
+	<ul>
+		<li>Dev cöordination; do-all.</li>
+		<li>Joint with Andrew Dickinson, Grace Bergman, Jasmine Scott, Krystaal McClain, and Robin Choi.</li>
+	</ul>
+</li>
+
+</ul>
+
+{! Section.close(C) !}
+
+{! Section.nav(C, "code") !}
+{! Section.sub(C, "personal", nil, "projects-personal") !}
+
+<ul class="list-chrono">
+
+<li>
+	{! anchor_ext("https://github.com/komiga/togo", "togo") !} &mdash; super-library for apps &amp; games <em>(C++, Lua)</em>
+	<ul>
+		<li>Data-oriented design, open types, open interfaces.</li>
+		<li>Digestible alternative to the C++ Standard Library.</li>
+		<li>Game engine (WIP) with pipeline tooling.</li>
+		<li>Imaging and windowing.</li>
+	</ul>
+</li>
+<li>
+	{! anchor_ext("https://github.com/komiga/quanta", "Quanta") !} &mdash; adaptive tracking toolkit <em>(C++, Lua)</em>
+	<ul>
+		<li>Expressive time and nutrition tracker, WIP Android companion.</li>
+		<li>Universal description language (English read- &amp; write-able).</li>
+		<li>Extendable, rapid-iteration tooling and data analytics with Lua.</li>
+		<li>Linux integration (CLI tools, data vessels).</li>
+	</ul>
+</li>
+<li>
+	{! anchor_ext("https://github.com/komiga/pickle", "Pickle") !} &mdash; static site generator <em>(C++, Lua)</em>
+	<ul>
+		<li>Non-dogmatic; user controls structure.</li>
+		<li>Lua-based template language and userspace.</li>
+		<li>Bare-bones web server for rapid iteration.</li>
+	</ul>
+</li>
+<li>
+	{! anchor_ext("https://github.com/komiga/precore", "precore") !} &mdash; Premake 4.4 extension <em>(Lua)</em>
+	<ul>
+		<li>Modularity &amp; reusability layer atop Premake.</li>
+	</ul>
+</li>
+<li>
+	{! anchor_ext("https://github.com/komiga/igen", "igen") !} &mdash; interface generator for C++ <em>(Python, libclang)</em>
+	<ul>
+		<li>Generates function declarations (preserving docs) from their implementations.</li>
+	</ul>
+</li>
+<li>
+	{! anchor_ext("https://github.com/komiga/include_sort", "include_sort") !} &mdash; inclusion sorter for C &amp; C++ <em>(Lua)</em>
+	<ul>
+		<li>Sorts <code>#include</code> statements in user-defined order.</li>
+	</ul>
+</li>
+
+</ul>
+
+{! Section.close(C) !}
+{! Section.close_grid(C) !}
+
+
+{! Section.grid_right(C) !}
+{! Section.nav(C, "contributions", "contrib") !}
+
+{! Section.sub(C, "major", nil, "contrib-major") !}
+
+<ul class="list-chrono">
+
+<li>
+	<strong>'15</strong> &mdash; {! anchor_ext("https://github.com/jteeuwen/spirv", "spirv") !},<sup>†</sup> a SPIR-V binary {de|en}coder <em>(Go)</em>
+	<ul>
+		<li>Implementation of the provisional specification.</li>
+		<li>Contributed fixes upstream (Khronos).</li>
+		<li>Co-architect alongside Jim Teeuwen.</li>
+	</ul>
+</li>
+<li>
+	<strong>'11</strong> &mdash; {! anchor_ext("http://www.openhub.net/p/mooege", "mooege") !},<sup>†‡</sup> a <em>Diablo 3</em> server emulator <em>(C♯)</em>
+	<ul>
+		<li>Networking (Battle.net, game layer), game world, Linux support.</li>
+		<li>Asset RE, packet RE, Protocol Buffer implementations, documentation.</li>
+		<li>Designed prospective production-grade server architecture.</li>
+		<li>Later: PR arbiter/project manager, working with many important contributors.</li>
+		<li>Co-architect alongside Hüseyin Uslu.</li>
+	</ul>
+</li>
+<li>
+	<strong>'10</strong> &mdash; {! anchor_ext("https://github.com/maximos", "Maximus") !},<sup>†</sup> a module manager <em>(BlitzMax)</em>
+	<ul>
+		<li>Core architecture and command-line client.</li>
+		<li>Joint project with Christiaan Kras, who maintained GUI client &amp; web service.</li>
+	</ul>
+</li>
+
 </ul>
 
 <p><small>
@@ -167,77 +252,46 @@ title = "resumé"
 	‡ &mdash; {! anchor_ext("http://www.openhub.net/p/mooege/contributors/2518259584869112", "Commit history") !}.
 </small></p>
 
-{! Section.sub(C, "hackathons", nil, "projects-hackathons") !}
+{! Section.sub(C, "minor", nil, "contrib-minor") !}
 
-<ul>
-	<li>
-		<p>{! anchor_ext("https://github.com/komiga/mpt-hackathon", "ParkPoints") !} &mdash; gamified park participation app <em>(2017, Parks and People United Through Technology, Metro Parks Tacoma)</em></p>
-		<ul>
-			<li>Dev cöordination; do-all.</li>
-			<li>Joint with Andrew Dickinson, Grace Bergman, Jasmine Scott, Krystaal McClain, and Robin Choi.</li>
-		</ul>
-	</li>
-</ul>
-
-{! Section.sub(C, "minor contributions", nil, "projects-contrib-minor") !}
-
-<p><em>A selection.</em></p>
-
-<ul>
-	<li>{! anchor_ext("https://libcxx.llvm.org/", "libc++") !} <em>(C++)</em></li>
-
-	<li>{! anchor_ext("http://glm.g-truc.net/", "GLM") !} <em>(C++)</em></li>
-
+<ul class="list-chrono">
+	<li>{! anchor_ext("http://pygments.org", "Pygments") !} <em>(Python)</em></li>
+	<li>{! anchor_ext("https://libcxx.llvm.org", "libc++") !} <em>(C++)</em></li>
+	<li>{! anchor_ext("http://glm.g-truc.net", "GLM") !} <em>(C++)</em></li>
 	<li>{! anchor_ext("https://github.com/go-gl/gltext", "gltext") !} <em>(Go)</em></li>
-
 	<li>{! anchor_ext("https://www.khronos.org/spir", "SPIR-V Specification (provisional)") !}</li>
-
 	<li>{! anchor_ext("http://golang.org/ref/spec", "Golang Specification") !}</li>
-
 	<li>{! anchor_ext("http://elixir-lang.org/getting-started/introduction.html", "Elixir Getting Started tutorial") !}</li>
 </ul>
 
+{! Section.close(C) !}
 
-{! Section.nav(C, "volunteer") !}
+{! Section.close_grid(C) !}
 
-{! Section.sub(C, "Linux games quality assurance", nil, "volunteer-work-linux-qa") !}
+<div class="clear-section print-break"></div>
 
-<ul>
-	<li>Humble Bundle &mdash; 17 games <em>(2012&ndash;2014)</em></li>
+{! Section.nav(C, "art") !}
+{! Section.sub(C, "videogame", nil, "art-videogame") !}
 
-	<li>Santa Ragione &mdash; {! anchor_ext("http://www.fotonica-game.com/", "Fotonica") !} <em>(2012)</em></li>
+<ul class="list-chrono">
+	<li><strong>2014</strong> &mdash; {! anchor_ext("http://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=14542", "Onomo") !}, a slow, dark platformer concept <em>(Ludum Dare 30, Lua, LÖVE, 34.7h)</em></li>
 
-	<li>Subsoap &mdash; {! anchor_ext("http://www.faeriesolitaire.com/", "Faerie Solitaire") !} <em>(2012)</em></li>
+	<li><strong>2013</strong> &mdash; {! anchor_ext("http://ludumdare.com/compo/ludum-dare-26/?action=preview&uid=14542", "Prisma") !}, a color-based twitch puzzler <em>(Ludum Dare 26, Lua, LÖVE, 35.1h)</em></li>
 </ul>
 
+{! Section.sub(C, "sound", nil, "art-sound") !}
 
-{! Section.nav(C, "games") !}
-
-{! Section.sub(C, "jams", nil, "games-jams") !}
-
-<ul>
-	<li>{! anchor_ext("http://www.ludumdare.com/compo/ludum-dare-26/?action=preview&amp;uid=14542", "Prisma") !} <em>(Ludum Dare 26)</em> &mdash; a color-based twitch puzzler <em>(Lua, LÖVE, 35.1h)</em></li>
-
-	<li>{! anchor_ext("http://www.ludumdare.com/compo/ludum-dare-30/?action=preview&amp;uid=14542", "Onomo") !} <em>(Ludum Dare 30)</em> &mdash; a slow, dark platformer concept <em>(Lua, LÖVE, 34.7h)</em></li>
+<ul class="list-chrono">
+	<li><strong>2016</strong> &mdash; {! anchor_ext("https://komiga.itch.io/sounds-for-contemplating-the-universe", "sounds for contemplating the universe") !}, a short aural journey to accompany thoughts of life beyond your star system <em>(SunVox, {! anchor_ext("https://itch.io/jam/fermi-paradox-jam", "Fermi Paradox Jam") !})</em></li>
 </ul>
 
-<div class="print-break">
+{! Section.sub(C, "visual", nil, "art-visual") !}
 
-
-{! Section.nav(C, "education") !}
-
-<p>Home-schooled; exclusively self-taught in final 4 years. Autodidact computer programmer and ever-curious craftsperson (bookbinding, wood working, and tool making, among many others).</p>
-
-{! Section.sub(C, "coursework", nil, "education-coursework") !}
-
-<ul>
-	<li>Repackaging and Application Migration using AdminStudio 9.5 <em>(2011, professional)</em></li>
-
-	<li>{! anchor_ext("https://www.coursera.org/course/algs4partI", "Algorithms, Part I") !} <em>(Princeton, Coursera)</em> &mdash; self-enrichment <em>(2013 × 2, Java)</em></li>
-
-	<li>{! anchor_ext("https://www.coursera.org/course/algs4partII", "Algorithms, Part II") !} <em>(Princeton, Coursera)</em> &mdash; self-enrichment <em>(2013&ndash;2014, Java)</em></li>
+<ul class="list-chrono">
+	<li><strong>2014</strong> &mdash; {! anchor_ext("http://imgur.com/a/NFwTo", "Kaleidograph") !} <em>(stills)</em>, an interactive generative art program <em>(JavaScript, p5.js)</em></li>
 </ul>
 
+{! Section.close(C) !}
 
 {! Section.nav(C, "familiarity") !}
 
@@ -275,7 +329,7 @@ title = "resumé"
 
 <div class="print-break">
 
-{! Section.sub(C, "languages", nil, "familiarity-languages") !}
+{! Section.sub(C, "programming languages", nil, "familiarity-programming-languages") !}
 
 <p><em>Standard library familiarity is equivalent to language familiarity herein.</em></p>
 
@@ -324,7 +378,7 @@ title = "resumé"
 <ul>
 	<li><strong>POSIX</strong> &mdash; extensive</li>
 
-	<li><strong>Windows API</strong> &mdash; narrow: professional</li>
+	<li><strong>Windows API</strong> (Win32/WinAPI) &mdash; narrow: professional</li>
 
 	<li><strong>Android SDK</strong> &mdash; narrow</li>
 
@@ -394,7 +448,7 @@ title = "resumé"
 
 	<li><strong>InstallShield</strong> <em>(17&ndash;21)</em> &mdash; proficient: professional</li>
 
-	<li><strong>Windows Installer</strong> <em>(3.0&ndash;5.0)</em> &mdash; extensive: professional</li>
+	<li><strong>Windows Installer (MSI)</strong> <em>(3.0&ndash;5.0)</em> &mdash; extensive: professional</li>
 
 	<li><strong>AdminStudio</strong> &mdash; extensive: professional</li>
 
@@ -404,13 +458,13 @@ title = "resumé"
 {! Section.sub(C, "spoken language", nil, "familiarity-spoken-language") !}
 
 <ul>
-	<li><strong>English</strong> <em>(U.S.&ndash;U.K. hybrid; U.S. dominant)</em> &mdash; proficient: first language</li>
+	<li><strong>English</strong> <em>(U.S.&ndash;U.K. hybrid; U.S. dominant)</em> &mdash; proficient <em>(C1-C2)</em>: first language</li>
 
-	<li><strong>French</strong> <em>(Standard/Metropolitan)</em> &mdash; narrow: actively learning</li>
+	<li><strong>French</strong> <em>(Standard/Metropolitan)</em> &mdash; narrow <em>(A1)</em>: actively learning</li>
 
-	<li><strong>Japanese</strong> <em>(Eastern/Tokyo)</em> &mdash; minimal: pronunciation, kana, few kanji, few phrases</li>
+	<li><strong>Japanese</strong> <em>(Eastern/Tokyo)</em> &mdash; minimal <em>(sub-A1)</em>: pronunciation, kana, few kanji, few phrases</li>
 
-	<li><strong>Greek</strong> <em>(Koine)</em> &mdash; minimal: pronunciation, script</li>
+	<li><strong>Greek</strong> <em>(Koine)</em> &mdash; minimal <em>(sub-A1)</em>: pronunciation, script</li>
 </ul>
 
 {! Section.sub(C, "rank key", nil, "familiarity-rank-key") !}
@@ -424,3 +478,7 @@ title = "resumé"
 </ol>
 
 </div>
+
+{! Section.close(C) !}
+
+<div class="vspace clear-section"></div>
