@@ -1,0 +1,33 @@
+
+.print-only {}
+
+.print-hide {
+	display: none;
+}
+
+.print-grayscale {
+	color: #000;
+}
+
+.container {
+	margin-top: 0px !important;
+}
+
+.navbar {
+	display: none;
+}
+
+/*p {
+	text-align: justify;
+}*/
+
+.footer {
+	display: none;
+}
+
+.print-break {
+	break-before: page;
+	break-inside: avoid;
+	page-break-before: always;
+	page-break-inside: avoid;
+}

@@ -1,0 +1,337 @@
+
+@import url("screen.css") screen;
+@import url("print.css") only print;
+
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	height: 100%;
+}
+
+body {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	font: normal normal normal 16px/1.366em "Bitstream Vera Sans", "DejaVu Sans", sans-serif !important;
+	background-color: #fff;
+	color: #000;
+}
+
+.document {
+	font-size: 14px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 20px 0px 20px 0px;
+	padding-top: 5px;
+}
+
+h1 { font-size: 160%; }
+h2 { font-size: 140%; }
+h3 { font-size: 120%; }
+/* WebKit/Chrom(e|ium) fix: +1% to avoid the twitchy sizing when hovering a heading with a para-ref */
+h4 { font-size: 115%; }
+h5 { font-size: 110%; }
+h6 { font-size: 105%; }
+
+ol, ul {
+	margin: 15px 0px 15px 30px;
+}
+p { margin: 20px 0px; }
+blockquote, q { margin: 20px; }
+
+ol { list-style: decimal; }
+ul { list-style: disc; }
+
+a {
+	color: #08f;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+/*a:visited	{
+	color: #60f;
+}*/
+
+em { font-style: italic; }
+strong { font-weight: bold; }
+small { font-size: 80%; }
+
+sup {
+	vertical-align: super;
+	line-height: 12px;
+	font-size: 80%;
+}
+
+/* Grid layout */
+
+.grid-33,
+.grid-40,
+.grid-50,
+.grid-60 {
+	display: inline;
+	position: relative;
+	float: left;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+
+.grid-33 { width: 33%; }
+.grid-40 { width: 40%; }
+.grid-50 { width: 50%; }
+.grid-60 { width: 60%; }
+
+.grid-left {
+	margin-left: 0;
+}
+.grid-right {
+	margin-right: 0;
+}
+
+.grid-left > .section {
+	margin-right: 20px;
+}
+
+/* Stylers */
+
+.list-styleless {
+	list-style: none;
+	margin-top: 0;
+	margin-left: 0;
+}
+
+.list-chrono {
+	margin-top: 0;
+	margin-left: 0;
+	list-style: none;
+	/*list-style-type: "»";*/
+}
+.list-chrono > li:before {
+	content: "» ";
+}
+
+.label-list {
+	/*margin-top: 0;
+	margin-right: 10px;*/
+	margin: 0 10px 0 0;
+	float: left;
+	list-style: none;
+	text-align: right;
+	font-weight: bold;
+}
+.label-list > li:before {
+	/*content: "∗ ";*/
+}
+
+.separator {
+	width: 100%;
+	border-bottom: 1px #000 solid;
+	margin-bottom: 20px;
+}
+
+.para-ref {
+	visibility: hidden;
+	margin-top: -60px;
+	padding-top: 60px;
+}
+.para-ref > a {
+	margin: auto 5px auto 5px;
+	padding: 0px 5px 0px 5px;
+	font-weight: normal;
+	text-decoration: none;
+}
+.para-ref > a:before { content: "#"; }
+
+h1:hover > .para-ref,
+h2:hover > .para-ref,
+h3:hover > .para-ref,
+h4:hover > .para-ref,
+h5:hover > .para-ref,
+h6:hover > .para-ref
+{
+	visibility: visible;
+}
+
+.vspace {
+	display: block;
+	margin-top: 20px;
+}
+
+/* Top-level */
+
+.container {
+	min-height: 100%;
+	margin: 60px 20px 0px 20px;
+}
+
+.main_column {
+	height: 100%;
+}
+
+/* Navigation bar */
+
+.navbar {
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9001;
+	position: fixed;
+	width: 100%;
+	height: 48px;
+	white-space: nowrap;
+	font-size: 18px;
+}
+
+.navbar > nav {
+	display: block;
+	overflow: hidden;
+	background-color: #000;
+	height: 48px;
+}
+
+@media only (max-width: 801px) {
+	.navbar > nav {
+		overflow-x: auto;
+		overflow-y: hidden;
+	}
+}
+
+.navbar > nav > ul {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.navbar > nav > ul > li {
+	vertical-align: top;
+	flex-shrink: 0;
+	height: 48px;
+	background-color: #000;
+}
+
+.nav-item {
+	display: block;
+	min-width: 16px;
+	height: 48px;
+	line-height: 48px;
+	padding: 0px 8px 0px 8px;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	background-color: #000;
+}
+
+.nav-item.link {
+	min-width: 32px;
+}
+
+.nav-item.bold {
+	font-weight: bold;
+	font-size: 110%;
+}
+
+.nav-item.single {
+	font-size: 140%;
+}
+
+.nav-item.small {
+	font-size: 100%;
+}
+
+/* It doesn't feel right with Bitstream Vera Sans!! */
+/* It's not aligned with the @ symbol on the index!!! */
+.nav-item.omega > span {
+	display: block;
+	padding-top: 2px;
+}
+
+a:hover.nav-item {
+	text-decoration: none;
+	color: #000;
+	background-color: #fff;
+}
+
+.nav-item-icon {
+	width: 24px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+a:hover > .nav-item-icon {
+	-webkit-filter: brightness(-1.0);
+	filter: brightness(-1.0);
+}
+
+.nav-item-icon.root {
+	width: 32px;
+}
+
+a:hover > .nav-item-icon.root {
+	-webkit-filter: none;
+	filter: none;
+}
+
+/* Article */
+
+.article {
+	display: block;
+}
+
+.article_content {}
+
+.section {
+	margin-left: 10px;
+}
+
+.section > h1,
+.section > h2,
+.section > h3,
+.section > h4,
+.section > h5,
+.section > h6 {
+	margin-left: -10px;
+}
+
+.section > h1:first-child,
+.section > h2:first-child,
+.section > h3:first-child,
+.section > h4:first-child,
+.section > h5:first-child,
+.section > h6:first-child {
+	margin-top: 0;
+}
+
+/* Footer */
+
+.footer {
+	display: block;
+	width: 100%;
+	padding: 40px 0px 40px 0px;
+	text-align: center;
+	font-size: 90%;
+	color: #333;
+}
+
+/* Special */
+
+.float-list {
+	display: inline;
+	float: left;
+	position: relative;
+	margin-right: 20px;
+}
+
+.clear-section {
+	display: block;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
