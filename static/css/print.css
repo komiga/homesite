@@ -10,7 +10,7 @@
 }
 
 .container {
-	margin-top: 0px !important;
+	margin: 0 0 0 0 !important;
 }
 
 .navbar {
@@ -21,7 +21,15 @@
 	text-align: justify;
 }*/
 
-.footer {
+.para-ref {
+	visibility: hidden !important;
+}
+.para-ref > a {
+	visibility: hidden !important;
+}
+
+.footer,
+.footer > div {
 	display: none;
 }
 
