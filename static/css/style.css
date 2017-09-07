@@ -55,6 +55,12 @@ a:hover {
 	color: #60f;
 }*/
 
+a.subtle {
+	color: #000;
+	text-decoration: dotted underline;
+	text-underline-position: under;
+}
+
 em { font-style: italic; }
 strong { font-weight: bold; }
 small { font-size: 80%; }
@@ -83,7 +89,7 @@ sup {
 	margin-right: 0%;
 }
 
-.grid-33 { width: 33%; }
+.grid-33 { width: 33.33%; }
 .grid-40 { width: 40%; }
 .grid-50 { width: 50%; }
 .grid-60 { width: 60%; }

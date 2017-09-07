@@ -5,20 +5,53 @@ nav = {
 	Site.nav.twitter,
 	Site.nav.github,
 	Site.nav.email,
-	NavItem("PDF", "PDF version", canonical_url("/komiga-resume-2017-08-24.pdf", true), nil, nil, "small"),
+	NavItem("PDF", "PDF version", canonical_url("/komiga-resume-2017-09-07.pdf", true), nil, nil, "small"),
 	NavItem(),
 }
 
 title = "resumé"
 ---content---
 
-{! Section.nav_left(C, "Coranna Howard", "bio", "bio") !}
+{! Section.grid_left(C, nil, true) !}
 
-<p>A programmer and artist from the Seattle, Washington area who is skilled in technical writing, vocational teaching, data architecture &amp; reverse-engineering, software repackaging, and the design &amp; implementation of low-level APIs.</p>
+{! Section.nav(C, "Coranna Howard", "bio", "bio") !}
+
+<p>A programmer and artist from the Seattle, Washington area, Coranna is skilled in technical writing, vocational teaching, data architecture &amp; reverse-engineering, modern computer graphics systems, software repackaging, and the design &amp; implementation of low-level APIs.</p>
+
+<p>In <a title="posessive determiner" class="subtle" href="{! canonical_url("/#p-pronouns", true) !}">zir</a> personal time, <a title="object pronoun" class="subtle" href="/#p-pronouns">ze</a> is an ever-curious craftsperson, a helper to fellow programmers, and a fervent opinoinator on tech culture.</p>
 
 {! Section.close(C) !}
 
-{! Section.nav_right(C, "www") !}
+{! Section.nav(C, "professional work", "pro-work", "professional") !}
+
+{! Section.sub(C, "self-employed &mdash; Tacoma, WA, U.S.A.", nil, "pro-work-self-1") !}
+
+{! Section.item(C, "<strong>2014&ndash;present</strong> &mdash; personal, gigs", nil, "pro-work-self-1") !}
+
+<p>Developing {! anchor_ext("https://github.com/komiga/quanta", "Quanta") !} and {! anchor_ext("https://github.com/komiga/togo", "togo") !}, tackling gigs in a medley of fields, and learning.</p>
+
+
+{! Section.sub(C, "Austin Powder &mdash; Cleveland, OH, U.S.A.", "http://austinpowder.com/home", "pro-work-ap") !}
+
+{! Section.item(C, "<strong>2011&ndash;2014</strong> &mdash; software repackaging", nil, "pro-work-ap-3") !}
+
+<p>Architect of packaging methodology &amp; repository of 675+ packages (approximately 211 products across 75 vendors) for a network of 850 Windows computers. Documented methodology &amp; structure and taught the art of repackaging. Wrote utilities for IT in VC++, CMD, and JScript.</p>
+
+{! Section.item(C, "<strong>2008&ndash;2009</strong> &mdash; IT", nil, "pro-work-ap-2") !}
+
+<p>Several contracts for hardware and software deployments. Built cross-platform software to track assignment &amp; progess of deployments and to allow the project manager to securely share user info with the technician.</p>
+
+{! Section.item(C, "<strong>~2005&ndash;2008</strong> &mdash; IT", nil, "pro-work-ap-1") !}
+
+<p>Numerous small jobs to keep the gears turning: utility software in various languages, software &amp; hardware configuration &amp; deployment, documentation, and user support.</p>
+
+{! Section.close(C) !}
+{! Section.close_grid(C) !}
+
+
+{! Section.grid_right(C, nil, true) !}
+
+{! Section.nav(C, "www") !}
 
 <ul class="label-list">
 	<li>email</li>
@@ -29,72 +62,36 @@ title = "resumé"
 <ul class="list-styleless">
 	<li>{! anchor_ext("mailto:me@komiga.com", "me@komiga.com", true) !}</li>
 	<li>{! anchor_ext("https://github.com/komiga", "github.com/komiga", true) !}</li>
-	<li>{! anchor(canonical_url("", true), "komiga.com") !}<strong>/</strong>{! anchor(canonical_url("/#code", true), "#code") !}</li>
-	<li>{! format_time(require("togo.filesystem").time_last_modified(C.page_source), "%Y-%m-%d") !}</li>
+	<li>{! anchor(canonical_url("", true), "komiga.com") !}</li>
+	<li>{! anchor(canonical_url("/resume", true), format_time(require("togo.filesystem").time_last_modified(C.page_source), "%Y-%m-%d")) !}</li>
 </ul>
-
 {! Section.close(C) !}
-
-<div class="clear-section"></div>
-
-{! Section.nav_left(C, "professional work", "pro-work", "professional") !}
-
-
-{! Section.sub(C, "self-employed &mdash; Tacoma, WA, U.S.A.", nil, "pro-work-self-1") !}
-
-{! Section.item(C, "<strong>2014&ndash;present</strong> &mdash; personal, gigs", nil, "pro-work-self-1") !}
-
-<p>Started {! anchor_ext("https://github.com/komiga/togo", "togo") !} and {! anchor_ext("https://github.com/komiga/quanta", "Quanta") !}, tackled gigs in a medley of fields, and consulted on healthy tech work culture.</p>
-
-
-{! Section.sub(C, "Austin Powder &mdash; Cleveland, OH, U.S.A.", "http://austinpowder.com/home", "pro-work-ap") !}
-
-{! Section.item(C, "<strong>2011&ndash;2014</strong> &mdash; software repackaging", nil, "pro-work-ap-5") !}
-
-<p>Architect of packaging methodology &amp; repository of 675+ packages (approximately 211 products across 75 vendors) for a network of 850 Windows computers. Documented methodology &amp; structure and taught the art of repackaging.</p>
-
-{! Section.item(C, "<strong>2009</strong> &mdash; software deployment", nil, "pro-work-ap-4") !}
-
-<p>Installed and configured Lotus Notes upgrades.</p>
-
-{! Section.item(C, "<strong>2009</strong> &mdash; hardware deployment", nil, "pro-work-ap-3") !}
-
-<p>Configured and shipped approximately 70 Wyse terminals to client's offices.</p>
-
-{! Section.item(C, "<strong>2008</strong> &mdash; hardware deployment", nil, "pro-work-ap-2") !}
-
-<p>Configured and deployed 65 computers with Windows XP. Built cross-platform software to track assignment &amp; completion of each device and to allow project manager to securely share user info with the technician.</p>
-
-{! Section.item(C, "<strong>~2005&ndash;2008</strong> &mdash; IT assistance", nil, "pro-work-ap-1") !}
-
-<p>Numerous small jobs to keep the gears turning: utility software in various languages, software &amp; hardware configuration &amp; deployment, documentation, and user support.</p>
-
-{! Section.close(C) !}
-
-
-{! Section.grid_right(C) !}
 
 {! Section.nav(C, "skills") !}
 
 {! Section.grid_left(C, 40) !}
 <ul class="list-styleless">
-	<li>C, C++</li>
-	<li>C♯</li>
-	<li>Lua</li>
-	<li>Python</li>
+	<li>C, C++, C♯</li>
+	<li>Lua, Python</li>
+	<li>Java, HTML</li>
 	<li>Clang, GCC</li>
-	<li>git</li>
+	<li>Bash, CMD</li>
+	<li>OpenGL, LÖVE</li>
+	<li>GLFW, SDL</li>
+	<li>git, GNU Make</li>
 </ul>
 {! Section.close_grid(C) !}
 
 {! Section.grid_right(C, 60) !}
 <ul class="list-styleless">
-	<li>make, Premake</li>
-	<li>Bash, CMD</li>
+	<li>CMake, Premake</li>
 	<li>Linux, POSIX</li>
 	<li>Windows, WinAPI</li>
+	<li>Visual Studio</li>
 	<li>Excel, GSheets</li>
 	<li>Blender, GIMP</li>
+	<li>MSI, InstallShield</li>
+	<li>Android SDK</li>
 </ul>
 {! Section.close_grid(C) !}
 
@@ -104,12 +101,6 @@ title = "resumé"
 
 {! Section.nav(C, "volunteer work", nil, "volunteer") !}
 
-{! Section.sub(C, "scientific research", nil, "volunteer-work-sci") !}
-
-<ul class="list-chrono">
-	<li><strong>'15&ndash;present</strong> &mdash; HCI thesis on trans people <em>(identity withheld to prevent deanonymization)</em></li>
-</ul>
-
 {! Section.sub(C, "Linux videogame QA", nil, "volunteer-work-linux-vg-qa") !}
 
 <ul class="list-chrono">
@@ -118,7 +109,15 @@ title = "resumé"
 	<li><strong>'12</strong> &mdash; Subsoap, {! anchor_ext("http://www.faeriesolitaire.com/", "Faerie Solitaire") !}</li>
 </ul>
 
+{! Section.sub(C, "scientific research", nil, "volunteer-work-sci") !}
+
+<ul class="list-chrono">
+	<li><strong>'15&ndash;present</strong> &mdash; HCI thesis on trans people and speech training <em>(identity withheld to prevent deanonymization)</em></li>
+</ul>
+
 {! Section.close(C) !}
+
+<div class="clear-section"></div>
 
 {! Section.nav(C, "background") !}
 
@@ -130,38 +129,46 @@ title = "resumé"
 	<li><strong>K-12</strong> &mdash; autodidact / homeschool</li>
 	<li><strong>English</strong> &mdash; <em>C1-C2</em>, U.S.&ndash;U.K. hybrid</li>
 	<li><strong>French</strong> &mdash; <em>A1</em>, Standard/Metro.</li>
+	<li><strong>Japanese</strong> &mdash; <em>sub-A1</em>, Eastern</li>
 </ul>
 
 {! Section.close(C) !}
 
 {! Section.close_grid(C) !}
 
-<div class="clear-section print-break"></div>
+<div class="clear-section"></div>
+<div class="print-break"><span></span></div>
 
-{! Section.grid_left(C) !}
-{! Section.nav(C, "hackathons") !}
+{! Section.nav(C, "portfolio") !}
 
 <ul class="list-chrono">
 
 <li>
-	<strong>2017</strong> &mdash; {! anchor_ext("https://github.com/komiga/mpt-hackathon", "ParkPoints") !}, a gamified park participation app (for <em>Parks and People United Through Technology</em> by Metro Parks Tacoma)
-	<ul>
-		<li>Dev cöordination; do-all.</li>
-		<li>Joint with Andrew Dickinson, Grace Bergman, Jasmine Scott, Krystaal McClain, and Robin Choi.</li>
-	</ul>
+	<strong>'16</strong> &mdash; {! anchor_ext("https://komiga.itch.io/sounds-for-contemplating-the-universe", "sounds for contemplating the universe") !}, a soundtrack for stargazing <em>({! anchor_ext("https://itch.io/jam/fermi-paradox-jam", "Fermi Paradox Jam") !})</em>
+</li>
+<li>
+	<strong>'14</strong> &mdash; {! anchor_ext("http://imgur.com/a/NFwTo", "Kaleidograph") !} <em>(stills)</em>, an interactive generative art program <em>(JavaScript, p5.js)</em>
+</li>
+<li>
+	<strong>'14</strong> &mdash; {! anchor_ext("http://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=14542", "Onomo") !}, a slow, dark platformer concept <em>(Ludum Dare 30, Lua, LÖVE, 34.7h)</em>
+</li>
+
+<li>
+	<strong>'13</strong> &mdash; {! anchor_ext("http://ludumdare.com/compo/ludum-dare-26/?action=preview&uid=14542", "Prisma") !}, a color-based twitch puzzler <em>(Ludum Dare 26, Lua, LÖVE, 35.1h)</em>
 </li>
 
 </ul>
 
 {! Section.close(C) !}
 
-{! Section.nav(C, "code") !}
-{! Section.sub(C, "personal", nil, "projects-personal") !}
+<div class="clear-section"></div>
+
+{! Section.nav_left(C, "code", nil, nil, 50) !}
 
 <ul class="list-chrono">
 
 <li>
-	{! anchor_ext("https://github.com/komiga/togo", "togo") !} &mdash; super-library for apps &amp; games <em>(C++, Lua)</em>
+	{! anchor_ext("https://github.com/komiga/togo", "togo") !}, app &amp; game super-library <em>(C++, Lua)</em>
 	<ul>
 		<li>Data-oriented design, open types, open interfaces.</li>
 		<li>Digestible alternative to the C++ Standard Library.</li>
@@ -170,7 +177,7 @@ title = "resumé"
 	</ul>
 </li>
 <li>
-	{! anchor_ext("https://github.com/komiga/quanta", "Quanta") !} &mdash; adaptive tracking toolkit <em>(C++, Lua)</em>
+	{! anchor_ext("https://github.com/komiga/quanta", "Quanta") !}, adaptive tracking toolkit <em>(C++, Lua)</em>
 	<ul>
 		<li>Expressive time and nutrition tracker, WIP Android companion.</li>
 		<li>Universal description language (English read- &amp; write-able).</li>
@@ -179,7 +186,7 @@ title = "resumé"
 	</ul>
 </li>
 <li>
-	{! anchor_ext("https://github.com/komiga/pickle", "Pickle") !} &mdash; static site generator <em>(C++, Lua)</em>
+	{! anchor_ext("https://github.com/komiga/pickle", "Pickle") !}, static site generator <em>(C++, Lua)</em>
 	<ul>
 		<li>Non-dogmatic; user controls structure.</li>
 		<li>Lua-based template language and userspace.</li>
@@ -187,19 +194,19 @@ title = "resumé"
 	</ul>
 </li>
 <li>
-	{! anchor_ext("https://github.com/komiga/precore", "precore") !} &mdash; Premake 4.4 extension <em>(Lua)</em>
+	{! anchor_ext("https://github.com/komiga/precore", "precore") !}, Premake 4.4 extension <em>(Lua)</em>
 	<ul>
 		<li>Modularity &amp; reusability layer atop Premake.</li>
 	</ul>
 </li>
 <li>
-	{! anchor_ext("https://github.com/komiga/igen", "igen") !} &mdash; interface generator for C++ <em>(Python, libclang)</em>
+	{! anchor_ext("https://github.com/komiga/igen", "igen") !}, C++ interface generator <em>(Python)</em>
 	<ul>
-		<li>Generates function declarations (preserving docs) from their implementations.</li>
+		<li>Generates function declarations (preserving docs) from their implementations using libclang.</li>
 	</ul>
 </li>
 <li>
-	{! anchor_ext("https://github.com/komiga/include_sort", "include_sort") !} &mdash; inclusion sorter for C &amp; C++ <em>(Lua)</em>
+	{! anchor_ext("https://github.com/komiga/include_sort", "include_sort") !}, C &amp; C++ #include sorter <em>(Lua)</em>
 	<ul>
 		<li>Sorts <code>#include</code> statements in user-defined order.</li>
 	</ul>
@@ -208,26 +215,13 @@ title = "resumé"
 </ul>
 
 {! Section.close(C) !}
-{! Section.close_grid(C) !}
 
-
-{! Section.grid_right(C) !}
-{! Section.nav(C, "contributions", "contrib") !}
-
-{! Section.sub(C, "major", nil, "contrib-major") !}
+{! Section.nav_right(C, "contributions", "contrib", nil, 50) !}
 
 <ul class="list-chrono">
 
 <li>
-	<strong>'15</strong> &mdash; {! anchor_ext("https://github.com/jteeuwen/spirv", "spirv") !},<sup>†</sup> a SPIR-V binary {de|en}coder <em>(Go)</em>
-	<ul>
-		<li>Implementation of the provisional specification.</li>
-		<li>Contributed fixes upstream (Khronos).</li>
-		<li>Co-architect alongside Jim Teeuwen.</li>
-	</ul>
-</li>
-<li>
-	<strong>'11</strong> &mdash; {! anchor_ext("http://www.openhub.net/p/mooege", "mooege") !},<sup>†‡</sup> a <em>Diablo 3</em> server emulator <em>(C♯)</em>
+	{! anchor_ext("http://www.openhub.net/p/mooege", "mooege") !},<sup>†‡</sup> <em>Diablo 3</em> server <em>(C♯, <strong>'11</strong>)</em>
 	<ul>
 		<li>Networking (Battle.net, game layer), game world, Linux support.</li>
 		<li>Asset RE, packet RE, Protocol Buffer implementations, documentation.</li>
@@ -237,67 +231,53 @@ title = "resumé"
 	</ul>
 </li>
 <li>
-	<strong>'10</strong> &mdash; {! anchor_ext("https://github.com/maximos", "Maximus") !},<sup>†</sup> a module manager <em>(BlitzMax)</em>
+	{! anchor_ext("https://github.com/komiga/mpt-hackathon", "ParkPoints") !}, gamified park participation app (for the <em>Parks and People United Through Technology</em> hackathon by Metro Parks Tacoma, <strong>'17</strong>)
+	<ul>
+		<li>Joint with Andrew Dickinson, Grace Bergman, Jasmine Scott, Krystaal McClain, and Robin Choi.</li>
+	</ul>
+</li>
+<li>
+	{! anchor_ext("https://github.com/jteeuwen/spirv", "spirv") !},<sup>†</sup> binary SPIR-V codec <em>(Go, <strong>'15</strong>)</em>
+	<ul>
+		<li>Implementation of the provisional specification.</li>
+		<li>Contributed fixes upstream (to Khronos).</li>
+		<li>Co-architect alongside Jim Teeuwen.</li>
+	</ul>
+</li>
+<li>
+	{! anchor_ext("https://github.com/maximos", "Maximus") !},<sup>†</sup> module manager <em>(BlitzMax, <strong>'10</strong>)</em>
 	<ul>
 		<li>Core architecture and command-line client.</li>
 		<li>Joint project with Christiaan Kras, who maintained GUI client &amp; web service.</li>
 	</ul>
 </li>
 
+<!-- minor -->
+
+<li>{! anchor_ext("http://pygments.org", "Pygments") !} <em>(Python)</em></li>
+<li>{! anchor_ext("https://libcxx.llvm.org", "libc++") !} <em>(C++)</em></li>
+<li>{! anchor_ext("http://glm.g-truc.net", "GLM") !} <em>(C++)</em></li>
+<li>{! anchor_ext("https://github.com/go-gl/gltext", "gltext") !} <em>(Go)</em></li>
+<li>{! anchor_ext("https://www.khronos.org/spir", "SPIR-V Specification (provisional)") !}</li>
+<li>{! anchor_ext("http://golang.org/ref/spec", "Golang Specification") !}</li>
+<li>{! anchor_ext("http://elixir-lang.org/getting-started/introduction.html", "Elixir Getting Started tutorial") !}</li>
+
 </ul>
 
 <p><small>
-	† &mdash; Defunct.
-	<br />
-	‡ &mdash; {! anchor_ext("http://www.openhub.net/p/mooege/contributors/2518259584869112", "Commit history") !}.
+† &mdash; Defunct.
+<span style="margin-left: 20px;">‡ &mdash; {! anchor_ext("http://www.openhub.net/p/mooege/contributors/2518259584869112", "Commit history") !}.</span>
 </small></p>
 
-{! Section.sub(C, "minor", nil, "contrib-minor") !}
-
-<ul class="list-chrono">
-	<li>{! anchor_ext("http://pygments.org", "Pygments") !} <em>(Python)</em></li>
-	<li>{! anchor_ext("https://libcxx.llvm.org", "libc++") !} <em>(C++)</em></li>
-	<li>{! anchor_ext("http://glm.g-truc.net", "GLM") !} <em>(C++)</em></li>
-	<li>{! anchor_ext("https://github.com/go-gl/gltext", "gltext") !} <em>(Go)</em></li>
-	<li>{! anchor_ext("https://www.khronos.org/spir", "SPIR-V Specification (provisional)") !}</li>
-	<li>{! anchor_ext("http://golang.org/ref/spec", "Golang Specification") !}</li>
-	<li>{! anchor_ext("http://elixir-lang.org/getting-started/introduction.html", "Elixir Getting Started tutorial") !}</li>
-</ul>
-
 {! Section.close(C) !}
 
-{! Section.close_grid(C) !}
+<div class="clear-section"></div>
 
-<div class="clear-section print-break"></div>
-
-{! Section.nav(C, "art") !}
-{! Section.sub(C, "videogame", nil, "art-videogame") !}
-
-<ul class="list-chrono">
-	<li><strong>2014</strong> &mdash; {! anchor_ext("http://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=14542", "Onomo") !}, a slow, dark platformer concept <em>(Ludum Dare 30, Lua, LÖVE, 34.7h)</em></li>
-
-	<li><strong>2013</strong> &mdash; {! anchor_ext("http://ludumdare.com/compo/ludum-dare-26/?action=preview&uid=14542", "Prisma") !}, a color-based twitch puzzler <em>(Ludum Dare 26, Lua, LÖVE, 35.1h)</em></li>
-</ul>
-
-{! Section.sub(C, "sound", nil, "art-sound") !}
-
-<ul class="list-chrono">
-	<li><strong>2016</strong> &mdash; {! anchor_ext("https://komiga.itch.io/sounds-for-contemplating-the-universe", "sounds for contemplating the universe") !}, a short aural journey to accompany thoughts of life beyond your star system <em>(SunVox, {! anchor_ext("https://itch.io/jam/fermi-paradox-jam", "Fermi Paradox Jam") !})</em></li>
-</ul>
-
-{! Section.sub(C, "visual", nil, "art-visual") !}
-
-<ul class="list-chrono">
-	<li><strong>2014</strong> &mdash; {! anchor_ext("http://imgur.com/a/NFwTo", "Kaleidograph") !} <em>(stills)</em>, an interactive generative art program <em>(JavaScript, p5.js)</em></li>
-</ul>
-
-{! Section.close(C) !}
+<div class="print-break"><span></span></div>
 
 {! Section.nav(C, "familiarity") !}
 
-<p><em>This section serves as a search-catch and as a more in-depth look at my experience.</em></p>
-
-<p><em>See {! anchor("#familiarity-rank-key", "below") !} for the rank key.</em></p>
+<p>Supplementary in-depth look at Coranna's knowledge.</p>
 
 {! Section.sub(C, "concepts &amp; domains", nil, "familiarity-concepts") !}
 
@@ -324,10 +304,6 @@ title = "resumé"
 
 	<li><strong>time tracking</strong> &mdash; proficient: daily, very detailed (beyond work), personal software</li>
 </ul>
-
-</div>
-
-<div class="print-break">
 
 {! Section.sub(C, "programming languages", nil, "familiarity-programming-languages") !}
 
@@ -373,7 +349,9 @@ title = "resumé"
 	<li><strong>Lisp</strong> &mdash; minimal</li>
 </ul>
 
+<div class="print-break">
 {! Section.sub(C, "toolkits", nil, "familiarity-toolkits") !}
+</div>
 
 <ul>
 	<li><strong>POSIX</strong> &mdash; extensive</li>
@@ -412,10 +390,6 @@ title = "resumé"
 
 	<li><strong>React</strong> &mdash; minimal</li>
 </ul>
-
-</div>
-
-<div class="print-break">
 
 {! Section.sub(C, "software", nil, "familiarity-software") !}
 
@@ -463,21 +437,7 @@ title = "resumé"
 	<li><strong>French</strong> <em>(Standard/Metropolitan)</em> &mdash; narrow <em>(A1)</em>: actively learning</li>
 
 	<li><strong>Japanese</strong> <em>(Eastern/Tokyo)</em> &mdash; minimal <em>(sub-A1)</em>: pronunciation, kana, few kanji, few phrases</li>
-
-	<li><strong>Greek</strong> <em>(Koine)</em> &mdash; minimal <em>(sub-A1)</em>: pronunciation, script</li>
 </ul>
-
-{! Section.sub(C, "rank key", nil, "familiarity-rank-key") !}
-
-<ol>
-	<li>proficient</li>
-	<li>extensive</li>
-	<li>wide</li>
-	<li>narrow</li>
-	<li>minimal</li>
-</ol>
-
-</div>
 
 {! Section.close(C) !}
 
