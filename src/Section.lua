@@ -3,19 +3,24 @@ local U = require "togo.utility"
 local P = require "Pickle"
 local M = require "core/Section"
 
-local function grid_class(grid_modifier, grid_width)
+local function grid_class(grid_modifier, grid_width, heading_fix)
 	if grid_width < 10 then
 		grid_width = grid_width * 10
 	end
-	return string.format("grid-%s grid-%s", grid_modifier, grid_width)
+	return string.format(
+		"%sgrid-%s grid-%s",
+		heading_fix and ("heading-fix ") or "",
+		grid_modifier,
+		grid_width
+	)
 end
 
-function M.grid_left(page, grid_width)
-	return string.format([[<div class="%s">]], grid_class("left", grid_width or 60))
+function M.grid_left(page, grid_width, heading_fix)
+	return string.format([[<div class="%s">]], grid_class("left", grid_width or 60, heading_fix))
 end
 
-function M.grid_right(page, grid_width)
-	return string.format([[<div class="%s">]], grid_class("right", grid_width or 40))
+function M.grid_right(page, grid_width, heading_fix)
+	return string.format([[<div class="%s">]], grid_class("right", grid_width or 40, heading_fix))
 end
 
 function M.close_grid(page)
@@ -56,6 +61,16 @@ end
 
 function M.nav_right(page, name, id, nav_text, grid_width, level, post_text)
 	return M.open(page, grid_class("right", grid_width or 40)) ..
+		M.make(page, name, "§ " .. name, nav_text and ("§ " .. nav_text) or nil, nil, id, level, true, nil, post_text)
+end
+
+function M.nav_left_topmost(page, name, id, nav_text, grid_width, level, post_text)
+	return M.open(page, grid_class("left", grid_width or 60, true)) ..
+		M.make(page, name, "§ " .. name, nav_text and ("§ " .. nav_text) or nil, nil, id, level, true, nil, post_text)
+end
+
+function M.nav_right_topmost(page, name, id, nav_text, grid_width, level, post_text)
+	return M.open(page, grid_class("right", grid_width or 40, true)) ..
 		M.make(page, name, "§ " .. name, nav_text and ("§ " .. nav_text) or nil, nil, id, level, true, nil, post_text)
 end
 

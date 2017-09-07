@@ -68,6 +68,11 @@ sup {
 
 /* Grid layout */
 
+/* If a grid is used, the topmost heading will be too low (margin layers) */
+.heading-fix {
+	margin-top: -20px;
+}
+
 .grid-33,
 .grid-40,
 .grid-50,
