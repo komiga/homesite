@@ -13,7 +13,7 @@ body {
 body {
 	display: block;
 	padding: 0px;
-	margin: 0px;
+	margin: 0;
 	font: normal normal normal 16px/1.366em "Bitstream Vera Sans", "DejaVu Sans", sans-serif !important;
 	background-color: #fff;
 	color: #000;
@@ -25,7 +25,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 20px 0px 20px 0px;
-	padding-top: 5px;
 }
 
 h1 { font-size: 160%; }
@@ -39,8 +38,8 @@ h6 { font-size: 105%; }
 ol, ul {
 	margin: 15px 0px 15px 30px;
 }
-p { margin: 20px 0px; }
-blockquote, q { margin: 20px; }
+p { margin: 15px 0px; }
+blockquote, q { margin: 15px; }
 
 ol { list-style: decimal; }
 ul { list-style: disc; }
@@ -56,6 +55,12 @@ a:hover {
 	color: #60f;
 }*/
 
+a.subtle {
+	color: #000;
+	text-decoration: dotted underline;
+	text-underline-position: under;
+}
+
 em { font-style: italic; }
 strong { font-weight: bold; }
 small { font-size: 80%; }
@@ -68,6 +73,11 @@ sup {
 
 /* Grid layout */
 
+/* If a grid is used, the topmost heading will be too low (margin layers) */
+.heading-fix {
+	margin-top: -20px;
+}
+
 .grid-33,
 .grid-40,
 .grid-50,
@@ -79,7 +89,7 @@ sup {
 	margin-right: 0%;
 }
 
-.grid-33 { width: 33%; }
+.grid-33 { width: 33.33%; }
 .grid-40 { width: 40%; }
 .grid-50 { width: 50%; }
 .grid-60 { width: 60%; }
@@ -164,7 +174,7 @@ h6:hover > .para-ref
 
 .container {
 	min-height: 100%;
-	margin: 60px 20px 0px 20px;
+	margin: 65px 20px 0px 20px;
 }
 
 .main_column {
@@ -300,7 +310,7 @@ a:hover > .nav-item-icon.root {
 .section > h4:first-child,
 .section > h5:first-child,
 .section > h6:first-child {
-	margin-top: 0;
+	/*margin-top: 0;*/
 }
 
 /* Footer */
