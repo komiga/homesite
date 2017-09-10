@@ -60,7 +60,7 @@ title = "resumé"
 <ul class="list-styleless">
 	<li>{! anchor_ext("mailto:me@komiga.com", "me@komiga.com", true) !}</li>
 	<li>{! anchor_ext("https://github.com/komiga", "github.com/komiga", true) !}</li>
-	<li>{! anchor(canonical_url("", true), "komiga.com") !}</li>
+	<li>{! anchor(canonical_url("", true), "komiga.com") !} / {! anchor(canonical_url("/resume", true), "resume") !}</li>
 	<li>{! anchor(canonical_url("/resume", true), format_time(require("togo.filesystem").time_last_modified(C.page_source), "%Y-%m-%d")) !}</li>
 </ul>
 {! Section.close(C) !}
