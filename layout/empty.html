@@ -1,0 +1,31 @@
+---content---
+<!DOCTYPE html>
+<html lang="en" {@ "core/bits/microdata/scope_html" @}>
+<head>
+	<meta charset="utf-8" />
+
+	<title>{{ page_title(C.title) }}</title>
+	<link rel="canonical" href="{! canonical_url(C.url, true) !}" />
+
+	<link rel="icon" type="image/png" href="/images/icons/favicon-32.png" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+	{@ "core/bits/analytics_script" @}
+</head>
+
+{% if C.body_class then %}
+<body class="{{ C.body_class }}">
+{% else %}
+<body>
+{% end %}
+
+<div>
+
+{! C.content !}
+
+</div>
+
+</body>
+</html>
