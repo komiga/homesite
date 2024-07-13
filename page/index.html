@@ -10,13 +10,13 @@ nav = {
 
 {! Section.nav(C, "about") !}
 
-<p><em>Note: this website is very much outdated!</em></p>
+<p><em>(nb: currently outdated, will be reworked)</em></p>
 
-<p>Hi! My name is Coranna Howard (she/her). I do a lot of thinking and crafting.</p>
+<p>Hi! My name is Coranna (she/her). I do a lot of thinking and crafting.</p>
 
 <p>My primary medium is code, a selection of which follows in the next section. I also sometimes dabble in {! anchor("#art-and-games", "games, generative art") !}, and {! anchor_ext("https://soundcloud.com/komiga/sets/sounds-for-contemplating-the", "music") !} (maybe?).</p>
 
-<p>I currently work as a software engineer in the US. {! anchor_ext("mailto:me@komiga.com", "Contact me") !} for my resumé or related inquiries.</p>
+<p>I currently work as a software engineer in the US. {! anchor_ext("mailto:me@komiga.com", "Contact me") !} for my resumé or for any other reason.</p>
 
 {! Section.close(C) !}
 
@@ -24,7 +24,7 @@ nav = {
 
 {! Section.item(C, "Pickle", "https://github.com/komiga/pickle") !}
 
-<p>A static site generator. It's more versatile (and usable) than, say, Jekyll or Hugo (in my opinion, of course), but it has a while to go before the kinks are hammered out.</p>
+<p>A static site generator utilizing Lua as a DSL.</p>
 
 
 {! Section.item(C, "precore", "https://github.com/komiga/precore") !}
@@ -34,12 +34,7 @@ nav = {
 
 {! Section.item(C, "Quanta", "https://github.com/komiga/quanta") !}
 
-<p>A highly adaptable toolset for tracking. Its primary facility is time-tracking, with a text format at its foundation specialized for describing the physical realm. Though Quanta is currently passive (with some validation), it will soon expand into analytics (e.g., craft efficiency, resource consumption, nutrition). It's being rewritten in Rust!</p>
-
-
-{! Section.item(C, "Super Transmuter") !}
-
-<p>A modular, extendable, general build tool (à la GNU Make) that uses Lua as a DSL.</p>
+<p>A highly adaptable toolset for tracking. Its primary facility is time tracking, with a text format at its foundation specialized for describing the physical realm. Though Quanta is currently passive (with some validation), it will soon expand into analytics (e.g., craft efficiency, resource consumption, nutrition). It's being rewritten in Rust!</p>
 
 
 {! Section.item(C, "togo", "https://github.com/komiga/togo") !}
@@ -62,20 +57,8 @@ nav = {
 	<li>{! anchor_ext("https://github.com/komiga/brinktools", "brinktools") !}: ancient code and docs for BRINK's SDMD2 and SDPK2 formats.</li>
 </ul>
 
-
-{! Section.sub(C, "primordium") !}
-
-<p>Slow-growing projects trapped in headspace. (You might be able to goad me into finally tackling these.)</p>
-
-<ul>
-	<li><strong>low-dependency, standalone interface generator for C++</strong>: because multiple declarations are <em>sooooo</em> annoying; see the imperfect kludge that is {! anchor_ext("https://github.com/komiga/igen", "igen") !}.</li>
-
-	<li><strong>bitbork</strong>: a tool for succinctly &amp; quickly designing and reverse-engineering data formats; programmable translation of tedious/non-trivial formulations to code (e.g., pointing into a blob containing memory-ready data).</li>
-
-	<li><strong>a programming language with attention to data and reasonable concurrency</strong>: a dreadful potion of C, C++ TMP, Go, Lua, and a dash of Erlang; both compiled and JIT/VM-able (from its own bytecode), complete utilization at build time (metaprogrammable in itself).</li>
-</ul>
-
 {! Section.close(C) !}
+
 
 {! Section.nav(C, "art &amp; games", "art-and-games") !}
 <span id="games"></span>
